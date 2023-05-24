@@ -2,7 +2,7 @@
 
 O **Blown to Bits: your life, liberty, and happiness after the digital
 explosion** é um livro muito interessante, escrito por Hal Abelson, 
-Ken Ledeen, Harry Lewis e Wndy Seltzer, que procura nos fornecer uma
+Ken Ledeen, Harry Lewis e Wendy Seltzer, que procura nos fornecer uma
 visão ampla (e até certo ponto assustadora) de como nossa vida foi, está
 sendo e será impactada pela explosão digital.
 
@@ -35,3 +35,6 @@ a mesma licença. Assim resolvi iniciar um projeto de tradução para o
 português do livro!
 
 Se quiser contribuir, entre em contato abrindo um *Issue*.
+
+Você pode fazer o download gratuito do livro, em PDF, no site:
+![www.bitsbook.com](https://www.bitsbook.com/)
