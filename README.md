@@ -6,7 +6,7 @@ Ken Ledeen, Harry Lewis e Wndy Seltzer, que procura nos fornecer uma
 visão ampla (e até certo ponto assustadora) de como nossa vida foi, está
 sendo e será impactada pela explosão digital.
 
-![Foto da cada do livro](https://raw.githubusercontent.com/computacaoraiz/blown-to-bits-pt_BR/tree/master/images/btb2e_thumb.jpg)
+![Foto da cada do livro](https://raw.githubusercontent.com/computacaoraiz/blown-to-bits-pt_BR/tree/master/imagens/btb2e_thumb.jpg)
 
 Os autores nos mostram que a todo instante, em qualquer aspecto de nossas
 vidas, nossos dados e informações pessoais, até mesmo as que gostaríamos
