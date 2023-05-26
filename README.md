@@ -1,4 +1,4 @@
-# Blown to Bits: projeto de tradução para o português (pt_BR)
+# Blown to Bits: tradução para o português (pt_BR)
 
 O **Blown to Bits: your life, liberty, and happiness after the digital
 explosion** é um livro muito interessante, escrito por Hal Abelson, 
