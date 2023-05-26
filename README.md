@@ -39,3 +39,11 @@ Se quiser contribuir, entre em contato abrindo um *Issue*.
 Você pode fazer o download gratuito do livro, em PDF, no site:
 
 [www.bitsbook.com](https://www.bitsbook.com/)
+
+## Status da tradução
+
+- Front matter
+  - [ ] Dedicatória
+  - [ ] Agradecimentos
+  - [ ] Sobre os autores
+  - [x] Prefácio
