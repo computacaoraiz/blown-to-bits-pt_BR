@@ -51,18 +51,18 @@ finalizada, a tradução dessa parte aparece como finalizada).
   - [ ] Sobre os autores
   - [x] **Prefácio**
 - Main matter
-  - [ ] **Capítulo 1**
+  - [ ] **Capítulo 1: Explosão Digital**
     - [ ] **Introdução**
     - [ ] **A explosão de bits**
     - [ ] **Os koans de bits**
     - [ ] O bem e o mal
-  - [ ] Capítulo 2
-  - [ ] Capítulo 3
-  - [ ] Capítulo 4
-  - [ ] Capítulo 5
-  - [ ] Capítulo 6
-  - [ ] Capítulo 7
-  - [ ] Capítulo 8
-  - [ ] Capítulo 9
+  - [ ] Capítulo 2: Despido à Luz do Sol
+  - [ ] Capítulo 3: Quem é o Dono de Sua Privacidade?
+  - [ ] Capítulo 4: Gatekeepers
+  - [ ] Capítulo 5: Bits Secretos
+  - [ ] Capítulo 6: Balance Toppled
+  - [ ] Capítulo 7: Você não Pode Dizer Isso na Internet
+  - [ ] Capítulo 8: Bits no Ar
+  - [ ] Capítulo 9: A Próxima Fronteira
 - Back matter
   - [ ] Índice remissivo
