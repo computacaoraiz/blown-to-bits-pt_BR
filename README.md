@@ -41,14 +41,21 @@ Você pode fazer o download gratuito do livro, em PDF, no site:
 [www.bitsbook.com](https://www.bitsbook.com/)
 
 ## Status da tradução
+A lista de tarefas abaixo mostra o status da tradução das diversas partes do
+livro. Tarefas **em negrito** indicam que a tradução foi iniciada (e, se foi
+finalizada, a tradução dessa parte aparece como finalizada).
 
 - Front matter
   - [ ] Dedicatória
   - [ ] Agradecimentos
   - [ ] Sobre os autores
-  - [x] Prefácio
+  - [x] **Prefácio**
 - Main matter
-  - [i] Capítulo 1
+  - [ ] **Capítulo 1**
+    - [ ] **Introdução**
+    - [ ] **A explosão de bits**
+    - [ ] **Os koans de bits**
+    - [ ] O bem e o mal
   - [ ] Capítulo 2
   - [ ] Capítulo 3
   - [ ] Capítulo 4
