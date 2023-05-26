@@ -46,8 +46,8 @@ livro. Tarefas **em negrito** indicam que a tradução foi iniciada (e, se foi
 finalizada, a tradução dessa parte aparece como finalizada).
 
 - Front matter
-  - [ ] Dedicatória
-  - [ ] Agradecimentos
+  - [x] **Dedicatória**
+  - [x] **Agradecimentos**
   - [ ] Sobre os autores
   - [x] **Prefácio**
 - Main matter
