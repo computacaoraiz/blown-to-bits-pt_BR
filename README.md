@@ -73,6 +73,8 @@ Esta tradução, conforme os termos de licença originais do Blown to Bits, é
 licenciada através da **Creative Commons, Attribution, Non Commercial, Share
 Alike, 4.0 International License** (CC BY-NC-SA 4.0 International).
 
+![CC BY-NC-SA 4.0](https://raw.githubusercontent.com/computacaoraiz/blown-to-bits-pt_BR/master/imagens/cc-by-nc-sa.png)
+
 Isso significa que você é livre para:
 
 * **Compartilhar**: copiar e redistribuir o material em qualquer meio ou
