@@ -66,3 +66,32 @@ finalizada, a tradução dessa parte aparece como finalizada).
   - [ ] Capítulo 9: A Próxima Fronteira
 - Back matter
   - [ ] Índice remissivo
+
+
+## Licença
+Esta tradução, conforme os termos de licença originais do Blown to Bits, é
+licenciada através da **Creative Commons, Attribution, Non Commercial, Share
+Alike, 4.0 International License** (CC BY-NC-SA 4.0 International).
+
+Isso significa que você é livre para:
+
+* **Compartilhar**: copiar e redistribuir o material em qualquer meio ou
+  formato; e
+* **Adaptar**: remixar, transformar, e construir a partir do material.
+
+Desde que você siga os seguintes termos:
+
+* **Atribuição**: Você deve dar o crédito apropriado, prover um link para a
+  licença e indicar se mudanças foram feitas. Você deve fazê-lo em qualquer
+  circunstância razoável, mas de nenhuma maneira que sugira que o licenciante
+  apoia você ou o seu uso;
+* **Não comercial**: Você não pode usar o material para fins comerciais;
+* **Compartilhar igual**: Se você remixar, transformar, ou criar a partir do
+  material, tem de distribuir as suas contribuições sob a mesma licença que o
+  original; e
+* **Sem restrições adicionais**: Você não pode aplicar termos jurídicos ou
+  medidas de caráter tecnológico que restrinjam legalmente outros de fazerem
+  algo que a licença permita.
+
+Para maiores informações, visite:
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
