@@ -52,7 +52,7 @@ finalizada, a tradução dessa parte aparece como finalizada).
   - [x] **Prefácio**
 - Main matter
   - [ ] **Capítulo 1: Explosão Digital**
-    - [ ] **Introdução**
+    - [x] **Introdução**
     - [ ] **A explosão de bits**
     - [ ] **Os koans de bits**
     - [ ] O bem e o mal
