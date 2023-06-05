@@ -48,7 +48,7 @@ finalizada, a tradução dessa parte aparece como finalizada).
 - Front matter
   - [x] **Dedicatória**
   - [x] **Agradecimentos**
-  - [x] Sobre os autores
+  - [x] **Sobre os autores**
   - [x] **Prefácio**
 - Main matter
   - [ ] **Capítulo 1: Explosão Digital**
