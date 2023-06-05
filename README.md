@@ -48,12 +48,12 @@ finalizada, a tradução dessa parte aparece como finalizada).
 - Front matter
   - [x] **Dedicatória**
   - [x] **Agradecimentos**
-  - [ ] Sobre os autores
+  - [x] Sobre os autores
   - [x] **Prefácio**
 - Main matter
   - [ ] **Capítulo 1: Explosão Digital**
     - [x] **Introdução**
-    - [ ] **A explosão de bits**
+    - [x] **A explosão de bits**
     - [ ] **Os koans de bits**
     - [ ] O bem e o mal
   - [ ] Capítulo 2: Despido à Luz do Sol
