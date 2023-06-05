@@ -65,7 +65,7 @@ finalizada, a tradução dessa parte aparece como finalizada).
   - [ ] Capítulo 8: Bits no Ar
   - [ ] Capítulo 9: A Próxima Fronteira
 - Back matter
-  - [ ] Índice remissivo
+  - [ ] **Índice remissivo**
 
 
 ## Licença
