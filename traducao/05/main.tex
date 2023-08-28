@@ -1,0 +1,471 @@
+\documentclass{book}
+\newcommand{\ingles}[1]{\textit{#1}}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter[Segredos Revelados]{Segredos Revelados\\\large\textit{Como os Códigos se Tornaram Inquebráveis}}
+\label{segredos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{O Escurecimento} %Tradução mais correta neste contexto seria Desaparecendo ou Obscurecimento, falar com o professor.
+\label{segredos:desaparecendo}
+
+A seção ``Bits Cubed: Os Arquivos de Snowden'' no Capítulo 2 detalha como Edward Snowden deixou seu emprego de consultoria governamental e voou para Hong Kong (ver a seção), levando consigo alguns pen drives e notebooks. Nesses dispositivos estavam milhares de documentos confidenciais. Em breve, o \ingles{The Washington Post} e outros veículos de notícias começariam a publicar detalhes sobre uma variedade de programas secretos de vigilância conduzidos pelo governo dos Estados Unidos e seus aliados.1
+
+O PRISM mirava empresas de tecnologia, como Google e Yahoo!, através das quais fluíam grandes quantidades de e-mails. O MUSCULAR quebrava os fluxos de dados dentro dessas empresas. O Dishfire era especializado em mensagens de texto. O XKeyscore tinha como alvo a grande rede global de fibras que mantém a Internet unida. Por anos, a Verizon e outras empresas de telecomunicações vinham entregando ao governo informações sobre as ligações telefônicas de americanos comuns --- sem mandados, sob ordens de um tribunal secreto que poucos americanos sabiam que existia.2
+
+Durante um subsequente inquérito no Congresso, o diretor da Agência de Segurança Nacional (NSA) não mostrou arrependimento e sugeriu que os programas da agência precisavam, até mesmo, ser expandidos. ``Sim, acredito que é do melhor interesse da nação colocar todos os registros telefônicos em uma caixa trancada que pudéssemos pesquisar quando necessário'', ele disse.3
+
+O resultado das revelações de Snowden foi dramático. Americanos --- bem como seus correspondentes internacionais, diplomatas e parceiros de negócios --- começaram a desejar lockboxes próprias: maneiras de criptografar suas mensagens para que apenas o remetente e o destinatário pudessem lê-las. A tecnologia já existia, e rapidamente, provedores de e-mails e provedores de comunicações para celular, como a Verizon, começaram a facilitar e tornar comum a criptografia de mensagens, tanto em trânsito quanto na origem e destino.4 A porcentagem de e-mails criptografados em trânsito aumentou de menos de 5\% pre-Snowden5 para pelo menos 90\% atualmente.6
+
+Em 2017, a criptografia se tornou tão rotineira e generalizada que a aplicação da lei encontrou dificuldades crescentes em decifrar as comunicações de suspeitos criminosos. O FBI relatou que, no ano anterior, seu laboratório havia recebido 7.775 dispositivos móveis que não conseguiam descriptografar, apesar de ter a autoridade legal para fazê-lo e alguns dos melhores recursos de quebra de códigos do mundo.7 ``Não conseguir acessar quase 7.800 dispositivos em um único ano é um grande problema de segurança pública'', alertou o diretor do FBI. Os dados estavam bem em suas mãos, mas era como se estivessem em Plutão. Não havia como alcançá-los. No entanto, descobriu-se que o número estava inflacionado; 2.000 telefones provavelmente estavam mais próximos da verdade.8 De qualquer forma, as autoridades estavam alarmadas com sua incapacidade de resolver crimes mesmo quando possuíam informações cruciais.
+
+Rod Rosenstein, procurador-geral adjunto dos Estados Unidos, falou na Academia Naval dos EUA sobre o que era necessário para manter a nação segura de criminosos --- e terroristas. No entanto, o alvo de Rosenstein não eram os criminosos e terroristas, mas sim as empresas de tecnologia que criavam as ferramentas que eles usavam.9 As empresas lucravam com tecnologias de criptografia que o governo não conseguia quebrar, e elas tinham a obrigação cívica de ajudar a aplicação da lei dos EUA. Afinal, às vezes elas cooperavam com governos estrangeiros. Às vezes, trabalhavam com governos para tornar a censura mais eficaz, por exemplo, e lucravam muito com isso. Talvez também lucrassem muito nos Estados Unidos ao oferecer mensagens criptografadas, mas o motivo de lucro delas deveria ser suficiente para não ajudar o governo dos EUA também? Rosenstein alertou sobre ``o escurecimento... a ameaça à segurança pública que ocorre quando provedores de serviços, fabricantes de dispositivos e desenvolvedores de aplicativos privam a aplicação da lei e os investigadores de segurança nacional de ferramentas cruciais de investigação''.
+
+A solução, continuou Rosenstein, era a ``criptografia responsável''. Ou seja, as empresas deveriam distribuir apenas criptografia que o governo pudesse contornar ou quebrar.
+
+Céticos e defensores da privacidade reagiram com horror ao apelo de Rosenstein por uma criptografia ``responsável''. Estudos anteriores e a experiência diária com violações de dados já haviam demonstrado que a ``key escrow'' segura era uma ideia implausível --- a noção de que algum terceiro, seja o governo ou as próprias empresas de tecnologia, poderia ser confiável para manter as chaves até que a aplicação da lei as solicitasse. E limitar a força das tecnologias de criptografia só tornaria as comunicações menos seguras. Na verdade, parecia que a única maneira de voltar aos dias em que o governo podia quebrar todos os códigos era revogar as leis da matemática que tornavam possível uma criptografia segura. A nação já havia tido esses debates apenas alguns anos antes, e a criptografia forte foi a vencedora. O Congresso chegou perto de aprovar leis sobre criptografia e recuou --- por razões muito boas.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Criptografia nas mãos de terroristas - e de todos os outros}
+\label{segredos:criptografia}
+
+13 de setembro de 2001. As chamas ainda ardiam nos destroços do World Trade Center quando Judd Gregg, de New Hampshire, levantou-se para contar ao Senado o que precisava acontecer. Ele lembrou dos alertas emitidos pelo FBI anos antes de o país ter sido atacado: o problema mais sério do FBI era ``a capacidade de criptografia das pessoas que têm a intenção de prejudicar a América''.
+
+``Costumava ser'', continuou o senador, ``tínhamos a capacidade de quebrar a maioria dos códigos por causa de nossa sofisticação.''10 Isso não era mais verdade. ``Podemos dar a nossos decifradores de códigos todo o dinheiro do mundo, mas a tecnologia ultrapassou os decifradores de códigos'',11 ele alertou. Até mesmo o criptógrafo defensor das liberdades civis, Phil Zimmermann, cujo software de criptografia foi disponibilizado na Internet em 1991 para ser usado por defensores dos direitos humanos em todo o mundo, concordou que os terroristas provavelmente estavam codificando suas mensagens. ``Eu simplesmente assumi'', disse ele, ``que alguém planejando algo tão diabólico desejaria esconder suas atividades usando criptografia.''12
+
+\ingles{Criptografia} é a arte de codificar mensagens para que não possam ser compreendidas por interceptadores ou adversários em cujas mãos as mensagens possam cair. Decifrar uma mensagem criptografada requer conhecer a sequência de símbolos --- a ``chave'' --- que foi usada para criptografá-la. Uma mensagem criptografada pode ser visível para o mundo, mas sem a chave, é como se estivesse escondida em uma caixa trancada. Sem a chave --- exatamente a chave certa --- o conteúdo da caixa, ou da mensagem, permanece secreto.
+
+Antecipando o apelo do Sr. Rosenstein para que a indústria atue de forma responsável, o Senador Gregg pediu ``a cooperação da comunidade que está desenvolvendo o software, produzindo o software e construindo o equipamento que cria a tecnologia de codificação''.13 Ou seja, ele pediu uma cooperação imposta por legislação. Os fabricantes de software de criptografia teriam que permitir que o governo contornasse as proteções e recuperasse as mensagens decifradas. E quanto a programas de criptografia escritos no exterior, que poderiam ser compartilhados ao redor do mundo em um piscar de olhos, como o de Zimmermann tinha sido? Os Estados Unidos deveriam usar ``o mercado dos Estados Unidos como alavanca'' para fazer com que os fabricantes estrangeiros seguissem os requisitos dos EUA para as chamadas ``portas dos fundos'' que poderiam ser usadas pelo governo dos EUA.
+
+Em 27 de setembro, a legislação de Gregg começou a tomar forma. As chaves usadas para criptografar as mensagens seriam mantidas em custódia pelo governo sob forte segurança. Haveria uma ``entidade para-judicial'', nomeada pela Suprema Corte, que decidiria quando a aplicação da lei tivesse apresentado seu caso para a divulgação das chaves. Defensores das liberdades civis protestaram e surgiram dúvidas sobre se a ideia de key escrow poderia realmente funcionar. Não importa, opinou o senador no final de setembro. ``Nada é perfeito. Se você não tentar, nunca conseguirá realizar. Se você tentar, pelo menos terá alguma oportunidade de realizá-lo.''14
+
+Abruptamente, três semanas depois, o senador Gregg abandonou seu plano legislativo. ``Não estamos trabalhando em um projeto de lei sobre criptografia e não temos intenção de fazê-lo'', disse o porta-voz do senador em 17 de outubro.15
+
+Em 24 de outubro de 2001, o Congresso aprovou o USA PATRIOT Act, que deu ao FBI amplos novos poderes para combater o terrorismo. Mas o PATRIOT Act não menciona criptografia. Mais de uma década se passou antes que as revelações de Snowden levassem os Estados Unidos a fazer outra tentativa séria de legislar o controle sobre o software criptográfico.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Por que não regulamentar a criptografia?}
+\label{segredos:regulamentar}
+
+Ao longo da década de 90, o controle da criptografia tornou-se a maior prioridade legislativa do FBI. A proposta do Senador Gregg era uma versão mais suave de um projeto de lei, elaborado pelo FBI e aprovado favoravelmente pelo Comitê de Inteligência da Câmara em 1997, que teria imposto uma pena de prisão de cinco anos para quem vendesse produtos de criptografia que não pudessem ser imediatamente decifrados por autoridades autorizadas.16
+
+Como medidas regulatórias que a aplicação da lei considerava essenciais em 1997 para combater o terrorismo desapareceram da agenda legislativa quatro anos depois, após o pior ataque terrorista já sofrido pelos Estados Unidos da América?
+
+Nenhuma descoberta tecnológica na criptografia no outono de 2001 teve relevância legislativa. Também não houve avanços diplomáticos relevantes. Nenhuma outra circunstância conspirou para tornar o uso da criptografia por terroristas e criminosos um problema sem importância. Apenas algo mais sobre a criptografia se tornou aceito como mais importante: a explosão de transações comerciais pela Internet. O Congresso de repente percebeu que precisava permitir que bancos e seus clientes usassem ferramentas de criptografia, assim como companhias aéreas e seus clientes, eBay e Amazon e seus clientes. Qualquer pessoa que usasse a Internet para fins comerciais precisava da proteção que a criptografia fornecia. De repente, havia milhões de pessoas assim - tantas que toda a economia dos Estados Unidos e do mundo dependia da confiança pública na segurança das transações eletrônicas.
+
+A tensão entre possibilitar a condução segura do comércio eletrônico e impedir a comunicação secreta entre criminosos existia há uma década. O Senador Gregg foi apenas o último dos que pediram restrições à criptografia. O Conselho Nacional de Pesquisa dos EUA emitiu um relatório de quase 700 páginas em 1996 que pesava as alternativas. O relatório concluiu que, no geral, os esforços para controlar a criptografia seriam ineficazes e que seus custos excederiam qualquer benefício imaginável. O establishment de inteligência e defesa não foi persuadido. O diretor do FBI, Louis Freeh, testemunhou perante o Congresso em 1997 que "a aplicação da lei concorda unanimemente que o uso generalizado de criptografia robusta sem recuperação de chaves [ou seja, não retida] acabará com nossa capacidade de combater o crime e prevenir o terrorismo".17
+
+No entanto, apenas quatro anos depois, mesmo diante do ataque de 11 de setembro, as necessidades do comércio não admitiam alternativa à disseminação generalizada de software de criptografia para todas as empresas do país, assim como para todos os computadores domésticos dos quais uma transação comercial pudesse ocorrer. Em 1997, cidadãos comuns, incluindo os representantes eleitos, talvez nunca tivessem comprado algo online. As famílias dos membros do Congresso podem não ter sido usuárias regulares de computador. Até 2001, tudo isso havia mudado: a explosão digital estava acontecendo. Os computadores se tornaram eletrodomésticos para o consumidor, as conexões à Internet eram comuns nas casas americanas e a conscientização sobre fraudes eletrônicas se tornou generalizada. Os consumidores não queriam que seus números de cartão de crédito, datas de nascimento e números do Seguro Social fossem expostos na Internet.
+
+Por que a criptografia é tão importante para as comunicações pela Internet que o Congresso estava disposto a arriscar que terroristas a usassem, para que as empresas e consumidores americanos pudessem usá-la também? Afinal, a segurança da informação não é uma necessidade nova. Pessoas que se comunicam por correio postal, por exemplo, têm garantias razoáveis de privacidade sem o uso de criptografia.
+
+A resposta está na arquitetura aberta da Internet. Os pacotes de dados que circulam pela Internet - cada um com cerca de 1.500 bytes - não são como envelopes enviados pelo correio postal, com um endereço do lado de fora e o conteúdo escondido. São como cartões-postais, com tudo exposto para que qualquer um possa ver. Conforme os pacotes passam pelos roteadores, que estão localizados nos pontos de comutação, eles são armazenados, examinados, verificados, analisados ​​e enviados em seu caminho. Mesmo que todas as fibras e fios pudessem ser seguros, redes sem fio permitiriam que os bits fossem capturados no ar sem detecção.
+
+Se você enviar o número do seu cartão de crédito para uma loja em um e-mail comum, é como se estivesse em Times Square e gritasse isso bem alto. Em 2001, muitos números de cartões de crédito estavam sendo transmitidos como bits por fibras de vidro e pelo ar, e era impossível impedir que bisbilhoteiros os vissem.
+
+A maneira de tornar as comunicações pela Internet seguras - garantir que apenas o destinatário pretendido saiba o que há em uma mensagem - é fazer com que o remetente criptografe as informações para que apenas o destinatário possa descriptografá-las. Se isso for possível, então os interceptadores ao longo do caminho, do remetente ao destinatário, podem examinar os pacotes o quanto quiserem, mas só encontrarão um emaranhado indescritível de bits.
+
+Em um mundo despertando para o comércio na Internet, a criptografia já não podia ser considerada como era desde os tempos antigos até o início do terceiro milênio: como uma armadura usada por generais e diplomatas para proteger informações críticas à segurança nacional. Mesmo no início dos anos 1990, o Departamento de Estado exigia que um pesquisador de criptografia se registrasse como um negociante internacional de armas. Agora, de repente, a criptografia era menos uma arma e mais como os carros blindados usados para transportar dinheiro nas ruas da cidade, exceto que esses carros blindados eram necessários por todos. A criptografia não era mais uma munição; era dinheiro.
+
+A comercialização de uma ferramenta militar crítica foi mais do que uma mudança tecnológica. Isso desencadeou e continua a desencadear uma revisão das noções fundamentais de privacidade e do equilíbrio entre segurança e liberdade em uma sociedade democrática.
+
+"A questão", colocada por Ron Rivest do MIT, um dos principais criptógrafos do mundo, durante um dos muitos debates sobre a política de criptografia que ocorreram durante os anos 1990, "é se as pessoas devem poder conduzir conversas privadas, imunes à vigilância do governo, mesmo quando essa vigilância é totalmente autorizada por uma ordem judicial".18 No clima pós-2001 que resultou no Ato PATRIOT, não está claro que o Congresso teria respondido à pergunta de Rivest com um ressonante "Sim". Mas em 2001, as realidades comerciais superaram os debates.
+
+Para atender às necessidades do comércio eletrônico, o software de criptografia tinha que estar amplamente disponível. Ele tinha que funcionar perfeitamente e rapidamente, sem chance de alguém quebrar os códigos. E havia mais: Embora a criptografia fosse usada por mais de quatro milênios, nenhum método conhecido até o final do século XX teria funcionado bem o suficiente para o comércio na Internet. No entanto, em 1976, dois jovens matemáticos, atuando fora da comunidade de inteligência que era o centro da pesquisa em criptografia, publicaram um artigo que tornava realidade um cenário aparentemente absurdo: Duas partes trabalham em uma chave secreta que lhes permite trocar mensagens de forma segura - mesmo que nunca tenham se conhecido e todas as suas mensagens um para o outro estejam abertas, para qualquer um ouvir. Com a invenção da criptografia de chave pública, tornou-se possível para cada homem, mulher e criança transmitir números de cartão de crédito para a Amazon de forma mais segura do que qualquer general podia comunicar ordens militares nas quais o destino das nações dependia 50 anos antes.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Criptografia histórica}
+\label{segredos:historica}
+
+A criptografia, ou "escrita secreta", existe há quase tanto tempo quanto a própria escrita. Cifras foram encontradas em hieróglifos egípcios datados de cerca de 2000 a.C. Uma cifra é uma ferramenta para transformar uma mensagem em uma forma obscurecida, juntamente com uma maneira de desfazer a transformação para recuperar a mensagem original. Suetônio, o biógrafo dos Césares, descreve o uso de uma cifra por Júlio César em suas cartas ao orador Cícero, com quem ele estava planejando e conspirando nos últimos dias da República Romana:
+
+%
+"Se ele [César] tivesse algo confidencial para dizer, ele escrevia em código, ou seja, alterando a ordem das letras do alfabeto, de forma que nenhuma palavra pudesse ser identificada. Se alguém quiser decifrar essas mensagens e entender seu significado, ele deve substituir a quarta letra do alfabeto, ou seja, o D, pelo A, e assim por diante."
+%
+
+Em outras palavras, César usava uma tradução letra por letra para criptografar suas mensagens:
+
+%
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+DEFGHIJKLMNOPQRSTUVWXYZABC
+%
+
+Para criptografar uma mensagem com o método de César, substitua cada letra da linha superior pela letra correspondente na linha inferior. Por exemplo, a abertura dos "Comentários de César", "Gallia est omnis divisa in partes tres", seria criptografada da seguinte forma:
+
+%
+Texto original: gallia est omnis divisa in partes tres
+Texto criptografado: jdoold hvw rpqlv glylvd lq sduwhv wuhv
+%
+
+A mensagem original é chamada de texto claro, e a mensagem codificada é chamada de texto criptografado. As mensagens são descriptografadas fazendo as substituições inversas. Esse método é chamado de cifra de César ou cifra de deslocamento de César. A regra de criptografia/descriptografia é fácil de lembrar: "Desloque o alfabeto três posições."
+
+Claro que a mesma ideia funcionaria se o alfabeto fosse deslocado mais do que três posições, ou menos. A cifra de César é realmente uma família de cifras, com 25 variações possíveis, uma para cada quantidade diferente de deslocamento.
+
+As cifras de César são muito simples, e um inimigo que soubesse que César estava simplesmente deslocando o texto claro poderia facilmente tentar todos os 25 deslocamentos possíveis do alfabeto para descriptografar a mensagem. No entanto, o método de César é representativo de uma classe maior de cifras, chamadas cifras de substituição, em que um símbolo é substituído por outro de acordo com uma regra uniforme (a mesma letra é sempre traduzida da mesma maneira).
+
+Existem muitas mais cifras de substituição do que apenas deslocamentos. Por exemplo, poderíamos embaralhar as letras de acordo com a regra:
+%
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+XAPZRDWIBMQEOFTYCGSHULJVKN
+%
+Assim, A se torna X, B se torna A, C se torna P e assim por diante. Existe uma substituição semelhante para todas as maneiras de reorganizar as letras do alfabeto. O número de diferentes reorganizações é
+%
+26 × 25 × 24 × … × 3 × 2
+%
+o que equivale a cerca de 4 × 1026 métodos diferentes - 10.000 vezes o número de estrelas no universo! Seria impossível testá-los todos. As cifras de substituição geral devem ser seguras - ou assim parece.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Quebrando Cifras de Substituição}
+\label{segredos:cifras}
+
+Por volta de 1392, um autor inglês - antes pensado ser o grande poeta inglês Geoffrey Chaucer, embora isso seja agora contestado - escreveu um manual para uso de um instrumento astronômico. Partes deste manual, intitulado "O Equatóriode Planetas", foram escritas em uma cifra de substituição (veja a Figura 5.1). Esse quebra-cabeça não é tão difícil quanto parece, mesmo que haja muito pouco texto criptografado com o qual trabalhar. Sabemos que está escrito em inglês - inglês médio, na verdade - mas vamos ver até onde podemos chegar pensando nisso como inglês criptografado.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Chaves Secretas e One-Time Pads}
+\label{segredos:one-time-pads}
+
+Chaves Secretas e One-Time Pads
+Na criptografia, cada avanço na quebra de códigos leva a uma inovação na criação de códigos. Ao ver o quão facilmente o código do Equatóriode Planetas foi quebrado, o que poderíamos fazer para torná-lo mais seguro, ou mais forte, como diriam os criptógrafos?
+
+Podemos usar mais de um símbolo para representar a mesma letra do texto claro. Um método denominado em homenagem ao diplomata francês do século XVI, Blaise de Vigenère, usa múltiplas cifras de César. Por exemplo, podemos escolher 12 cifras de César e usar a primeira cifra para criptografar as 1ª, 13ª e 25ª letras do texto claro; a segunda cifra para criptografar as 2ª, 14ª e 26ª letras do texto claro; e assim por diante. A Figura 5.5 mostra tal cifra de Vigenère. Uma mensagem de texto claro começando com "SECURE ..." seria criptografada para produzir o texto cifrado "llqgrw ...", como indicado pelos caracteres destacados na figura: S é criptografado usando a primeira linha, E é criptografado usando a segunda linha e assim por diante. Depois de usarmos a última linha da tabela, começamos novamente na primeira linha e repetimos o processo continuamente.
+
+Podemos usar a cifra da Figura 5.5 sem precisar enviar a tabela inteira ao nosso correspondente. Ao percorrer a primeira coluna, podemos formar a palavra "thomasbbryan", que é a chave para a mensagem. Para se comunicar usando a criptografia de Vigenère, os correspondentes devem primeiro concordar com uma chave. Eles então usam a chave para construir uma tabela de substituição para criptografar e descriptografar mensagens.
+
+Quando "SECURE" foi criptografado como "llqgrw", as duas ocorrências da letra E nas posições segunda e sexta no texto claro foram representadas por diferentes letras cifradas, e as duas ocorrências da letra cifrada "l" representaram diferentes letras no texto claro. Isso ilustra como a cifra de Vigenère confunde a simples análise de frequência, que era a principal ferramenta dos criptoanalistas na época. Embora a ideia possa parecer simples, a descoberta da cifra de Vigenère é considerada um avanço fundamental na criptografia, e o método foi considerado inquebrável por centenas de anos.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Imagem
+FIGURA 5.5 Uma cifra de Vigenère. A chave, thomasbbryan, percorre a segunda coluna. Cada linha representa uma cifra de César em que a quantidade de deslocamento é determinada por uma letra da chave. (Thomas B. Bryan era um advogado que usava esse código para se comunicar com um cliente, Gordon McKay, em 1894.)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Os criptógrafos usam figuras padrão para descrever cenários de criptografia: Alice quer enviar uma mensagem para Bob, e Eve é um adversário que pode estar espionando.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Criptografia e História}
+\label{segredos:crip-his}
+
+A criptografia (criação de códigos) e a criptoanálise (quebra de códigos) têm estado no cerne de muitos eventos importantes na história humana. As histórias entrelaçadas de diplomacia, guerra e tecnologia de codificação são contadas maravilhosamente em dois livros: "The Codebreakers" de David Kahn e "The Code Book" de Simon Singh.
+
+Suponha que Alice queira enviar uma mensagem para Bob (veja a Figura 5.6). A metáfora da fechadura e chave funciona assim: Alice coloca a mensagem em uma caixa e tranca a caixa usando uma chave que apenas ela e Bob possuem. (Imagine que a fechadura da caixa de Alice é do tipo que precisa da chave para ser travada e também para ser aberta). Se Eve intercepta a caixa em trânsito, ela não tem como descobrir qual chave usar para abri-la. Quando Bob recebe a caixa, ele usa sua cópia da chave para abri-la. Desde que a chave seja mantida em segredo, não importa que outras pessoas possam ver que há uma caixa com algo dentro, e até mesmo que tipo de fechadura está na caixa. Da mesma forma, mesmo que uma mensagem criptografada venha com um aviso de que foi criptografada usando uma cifra de Vigenère, não será fácil descriptografá-la, exceto por alguém que tenha a chave.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+imagem
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+FIGURA 5.6 Cenário criptográfico padrão. Alice quer enviar uma mensagem para Bob. Ela a criptografa usando uma chave secreta. Bob a descriptografa usando sua cópia da chave. Eve é uma espiã. Ela intercepta a mensagem criptografada em trânsito e tenta descriptografá-la.
+
+O método da cifra de Vigenère foi de fato quebrado no meio do século XIX pelo matemático inglês Charles Babbage, que é hoje reconhecido como uma figura fundadora no campo da computação. Babbage percebeu que, se alguém pudesse adivinhar ou deduzir o comprimento da chave e, portanto, o comprimento do ciclo no qual a cifra de Vigenère se repetia, o problema seria reduzido a quebrar várias substituições simples. Ele então usou uma brilhante extensão da análise de frequência para descobrir o comprimento da chave. Babbage nunca publicou sua técnica, talvez a pedido da inteligência britânica. Um oficial do exército prussiano, Friedrich Kasiski, descobriu independentemente como quebrar o código de Vigenère e publicou o método em 1863. A cifra de Vigenère tem sido insegura desde então.
+
+A maneira segura de vencer esse ataque é usar uma chave que tenha o mesmo comprimento do texto claro, de modo que não haja repetições. Se quiséssemos criptografar uma mensagem de comprimento 100, poderíamos usar 100 cifras de César em uma disposição como a da Figura 5.5, estendida para 100 linhas. Cada linha da tabela seria usada apenas uma vez. Um código como esse é conhecido como cifra de Vernam, em homenagem ao seu inventor da era da Primeira Guerra Mundial, o engenheiro telegráfico da AT\&T, Gilbert Vernam, ou, mais comumente, um one-time pad.
+
+O termo "one-time pad" baseia-se em uma implementação física específica da cifra. Vamos imaginar novamente que Alice quer enviar uma mensagem para Bob. Alice e Bob têm blocos de papel idênticos. Cada página do bloco tem uma chave escrita nela. Alice usa a primeira página para criptografar uma mensagem. Quando Bob a recebe, ele usa a primeira página de seu bloco para descriptografar a mensagem. Tanto Alice quanto Bob rasgam e destroem a primeira página do bloco após o uso. É essencial que as páginas não sejam reutilizadas, pois isso poderia criar padrões como os explorados na quebra da cifra de Vigenère.
+
+One-time pads foram usados durante a Segunda Guerra Mundial e a Guerra Fria na forma de livretos preenchidos com dígitos (veja a Figura 5.7). Governos ainda usam one-time pads hoje para comunicações sensíveis, com grandes quantidades de material de chaveamento cuidadosamente gerado e distribuído em CDs ou DVDs.
+
+FIGURA 5.7 One-time pad alemão usado para comunicação entre Berlim e Saigon durante a década de 1940. As mensagens criptografadas identificavam a página a ser usada na descriptografia. A capa adverte: "Páginas deste livro de criptografia que pareçam não utilizadas podem conter códigos para mensagens que ainda estão a caminho. Elas devem ser mantidas seguras pelo maior tempo que uma mensagem possa levar para ser entregue."
+
+Um one-time pad, se usado corretamente, não pode ser quebrado por criptoanálise. Simplesmente não há padrões a serem encontrados no texto cifrado. Existe uma relação profunda entre a teoria da informação e a criptografia, que Claude Shannon explorou em 1949. (De fato, provavelmente foi sua pesquisa durante a guerra sobre esse assunto delicado que deu origem a suas brilhantes descobertas sobre comunicação em geral.) Shannon provou matematicamente o que é intuitivamente óbvio: o one-time pad é, em princípio, o melhor que a criptografia pode ser. É absolutamente inquebrável em teoria.
+
+Mas como Yogi Berra disse: "Na teoria, não há diferença entre teoria e prática. Na prática, há." Bons one-time pads são difíceis de produzir. Se um pad contém repetições ou outros padrões, a prova de Shannon de que one-time pads são inquebráveis não se mantém mais. Mais seriamente, transmitir um pad entre as partes sem perda ou interceptação provavelmente será tão difícil quanto comunicar o texto claro da mensagem em si sem detecção. Normalmente, as partes compartilhariam um pad antecipadamente e esperariam ocultá-lo em suas viagens. Pads grandes são mais difíceis de ocultar do que pads pequenos, no entanto, surge a tentação de reutilizar páginas - o beijo da morte para a segurança.
+
+A KGB soviética caiu exatamente nesta tentação, o que levou à descriptografia parcial ou completa de mais de 3.000 mensagens diplomáticas e de espionagem por serviços de inteligência dos EUA e britânicos durante os anos de 1942 a 1946. O projeto VENONA da Agência de Segurança Nacional, revelado publicamente apenas em 1995, foi responsável por expor grandes agentes da KGB, como Klaus Fuchs e Kim Philby. As mensagens soviéticas foram criptografadas duas vezes, usando um one-time pad além de outras técnicas; isso tornou o projeto de quebra de códigos extremamente difícil. Ele teve sucesso apenas porque, à medida que a Segunda Guerra Mundial se arrastava e as condições materiais se deterioravam, os soviéticos reutilizavam os pads.
+
+Porque os one-time pads são impraticáveis, quase toda criptografia utiliza chaves relativamente curtas. No entanto, alguns métodos são mais seguros do que outros. Programas de computador que quebram a criptografia Vigenère estão prontamente disponíveis na internet e nenhum profissional usaria a cifra Vigenère hoje em dia. As cifras sofisticadas de hoje são os distantes descendentes dos antigos métodos de substituição. Em vez de substituir os textos das mensagens letra por letra, os computadores dividem uma mensagem de texto claro codificada em ASCII em blocos. Em seguida, eles transformam os bits no bloco de acordo com algum método que depende de uma chave. A chave em si é uma sequência de bits na qual Alice e Bob devem concordar e manter em segredo de Eve. Ao contrário da cifra Vigenère, não há atalhos conhecidos para quebrar essas cifras (ou pelo menos nenhum conhecido publicamente). O melhor método para descriptografar um texto cifrado sem conhecer a chave secreta parece ser a busca exaustiva de força bruta, tentando todas as chaves possíveis.
+
+A quantidade de cálculos necessários para quebrar uma cifra por busca exaustiva cresce exponencialmente com o tamanho da chave. Aumentar o tamanho da chave em um bit dobra a quantidade de trabalho necessária para quebrar a cifra, mas apenas ligeiramente aumenta o trabalho necessário para criptografar e descriptografar. É isso que torna essas cifras tão úteis: os computadores podem continuar ficando mais rápidos - mesmo em taxa exponencial - mas o trabalho necessário para quebrar a cifra também pode ser feito para crescer exponencialmente, escolhendo chaves cada vez mais longas.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Lições para a Era da Internet}
+\label{segredos:licoes}
+
+Vamos fazer uma pausa por um momento para considerar algumas das lições da história da criptografia - lições que foram bem compreendidas no início do século XX. No final do século XX, a criptografia mudou drasticamente devido à tecnologia moderna de computadores e novos algoritmos criptográficos, mas essas lições ainda são verdadeiras hoje. Elas são frequentemente esquecidas.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Avanços acontecem, mas as notícias viajam devagar}
+\label{segredos:avancos}
+
+Maria Stuart foi decapitada quando suas cartas conspirando contra Elizabeth foram decifradas usando análise de frequência, algo que Al-Kindi havia descrito nove séculos antes. Métodos mais antigos também continuaram a ser usados até os dias atuais, mesmo para comunicações de alto risco. Suetônio explicou o cifra de César no primeiro século d.C. No entanto, dois milênios depois, a Máfia Siciliana ainda estava usando o código. Bernardo Provenzano era um notório chefe da Máfia que conseguiu se manter fugindo da polícia italiana por 43 anos. Mas, em 2002, alguns pizzini - textos cifrados em pequenos pedaços de papel - foram encontrados em posse de um de seus associados. As mensagens incluíam correspondências entre Bernardo e seu filho Angelo, escritas em um cifra de César - com um deslocamento de três, exatamente como Suetônio havia descrito. Bernardo mudou para um código mais seguro, mas os dominós começaram a cair. Ele finalmente foi rastreado até uma fazenda e preso em abril de 2006.
+
+Mesmo os cientistas não estão imunes a tais tolices. Embora Babbage e Kasiski tenham quebrado o cifra de Vigenère no meio do século XIX, a Scientific American descreveu o método de Vigenère como ``impossível de ser traduzido'' 50 anos depois.
+
+Mensagens codificadas tendem a parecer indecifráveis. Os imprudentes, sejam eles ingênuos ou sofisticados, são levados a uma falsa sensação de segurança quando olham para embaralhados aparentemente ininteligíveis de números e letras. Criptografia é uma ciência, e os especialistas sabem muito sobre quebra de códigos.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{A Confiança é Boa, mas a Certeza Seria Melhor}
+\label{segredos:confianca}
+
+Não há garantias de que nem mesmo os melhores cifras contemporâneos não serão quebrados - ou que já não tenham sido quebrados. Alguns desses cifras têm o potencial de serem validados por provas matemáticas, mas fornecer essas provas exigirá avanços matemáticos profundos. Se alguém sabe como quebrar códigos modernos, provavelmente é alguém da Agência de Segurança Nacional ou de uma agência equivalente de um governo estrangeiro, e essas pessoas não costumam falar muito publicamente.
+
+Na ausência de uma prova formal de segurança, tudo o que se pode fazer é confiar no que foi apelidado de Fundamento Fundamental da Criptografia: se muitas pessoas inteligentes falharam em resolver um problema, provavelmente ele não será resolvido (em breve).
+
+Claro, esse não é um princípio muito útil na prática; por definição, avanços não tendem a acontecer "em breve". Mas eles acontecem, e quando acontecem, a preocupação entre os criptógrafos é generalizada. Em 1991, o algoritmo MD5 foi introduzido para computar operações criptográficas cruciais chamadas de "message digests", que são elementos fundamentais de segurança em quase todos os servidores web, programas de senhas e produtos de escritório. O MD5 foi projetado para substituir o algoritmo MD4 anterior após surgirem questionamentos sobre sua segurança. Dentro de alguns anos, pesquisadores acadêmicos começaram a produzir resultados que sugeriam que o MD5 também poderia ser vulnerável a ataques. Criptógrafos propuseram que o MD5 deveria ser abandonado em favor de um algoritmo mais forte, o SHA-1, mas seus alertas tiveram impacto limitado, pois os ataques publicados ao MD5 pareciam em grande parte teóricos e pouco realistas. Então, em agosto de 2004, em uma conferência anual de criptografia, os pesquisadores anunciaram que conseguiram quebrar o MD5 usando apenas uma hora de tempo de computação. A pressão para mudar para o SHA-1 aumentou, mas logo foram descobertas fraquezas no próprio SHA-1.
+
+Ainda assim, não havia motivo para acreditar que qualquer pessoa, exceto os pesquisadores acadêmicos, fosse capaz de quebrar o MD5 ou o SHA-1... até 2012. Foi quando foi revelado que o Flame, uma forma de malware de espionagem que havia infectado computadores no Irã e em outros países do Oriente Médio, dependia de uma forma completamente nova de ataque ao MD5. Em outras palavras, os criadores do Flame pareciam incluir criptógrafos tão experientes e criativos quanto aqueles que publicavam nas principais conferências acadêmicas.
+
+Até o momento em que escrevo, o SHA-1 não foi "quebrado", mas foi enfraquecido: ataques que antes eram considerados impossivelmente demorados agora se tornaram extremamente caros. O SHA-1 foi substituído por novos padrões, o SHA-2 e o SHA-3, que parecem ser mais fortes - mas tudo o que realmente sabemos é que eles ainda não foram quebrados.
+
+Um algoritmo de criptografia comprovadamente seguro é um dos objetivos mais desejados da ciência da computação. Cada fraqueza exposta em algoritmos propostos gera novas ideias sobre como torná-los mais fortes. Ainda não chegamos lá, mas o progresso está sendo feito.
+
+%%%%QUADRO%%%%
+Um algoritmo de criptografia comprovadamente seguro é um dos objetivos mais desejados da ciência da computação.
+%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Ter um bom sistema não significa que as pessoas o utilizarão}
+\label{segredos:bom-sistema}
+
+Antes de explicarmos que a criptografia inquebrável pode finalmente ser possível, precisamos alertar que, mesmo com certeza matemática, não seria suficiente para criar uma segurança perfeita se as pessoas não mudarem seu comportamento.
+
+Vigenère publicou seu método de criptografia em 1586. No entanto, os secretários de cifras de escritórios estrangeiros geralmente evitavam o cifra de Vigenère porque era complicado de usar. Eles continuavam usando cifras de substituição simples - mesmo que fosse bem conhecido que essas cifras eram facilmente quebradas - e esperavam pelo melhor. No século XVIII, a maioria dos governos europeus possuía hábeis "Câmaras Negras" por meio das quais toda correspondência de embaixadas estrangeiras era encaminhada para decifração. Finalmente, as embaixadas mudaram para cifras de Vigenère, que continuaram sendo usadas mesmo depois que informações sobre como quebrá-las se tornaram amplamente conhecidas.
+
+E isso acontece até hoje. Invenções tecnológicas, por mais sólidas que sejam em teoria, não serão usadas para fins cotidianos se forem inconvenientes ou caras. Os riscos de sistemas fracos são frequentemente justificados em tentativas de evitar o trabalho de mudar para alternativas mais seguras.
+
+Em 1999, um padrão de criptografia conhecido como Wired Equivalent Privacy (WEP) foi introduzido para conexões sem fio em casas e escritórios. No entanto, em 2001, descobriu-se que o WEP tinha falhas graves que facilitavam a interceptação de redes sem fio, fato amplamente conhecido na comunidade de segurança. Apesar disso, as empresas de equipamentos sem fio continuaram a vender produtos WEP, enquanto especialistas do setor confortavam dizendo que "WEP é melhor do que nada". Um novo padrão, Wi-Fi Protected Access (WPA), foi finalmente introduzido em 2002, mas somente em setembro de 2003 os produtos foram obrigados a usar o novo padrão para obter certificação. Hackers conseguiram roubar mais de 45 milhões de registros de cartões de crédito e débito da TJX, a empresa-mãe de várias grandes redes de lojas de varejo, porque a empresa ainda estava usando criptografia WEP até 2005. Isso foi muito depois de se saber das vulnerabilidades do WEP e de o WPA estar disponível como substituição. O custo desse vazamento de segurança chegou a centenas de milhões de dólares.
+
+Quando a criptografia era um monopólio militar, era possível, em princípio, para um comandante ordenar que todos começassem a usar um novo código se o comandante suspeitasse que o inimigo havia quebrado o antigo. Os riscos da criptografia insegura hoje surgem de três forças que atuam em conjunto: a velocidade com que as notícias sobre inseguranças se espalham entre os especialistas, a lentidão com que os inexperientes reconhecem suas vulnerabilidades e a escala massiva em que o software criptográfico é implantado. Quando um pesquisador universitário descobre uma pequena falha em um algoritmo, computadores em todos os lugares ficam vulneráveis, e não há uma autoridade central para dar o comando de atualizações de software em todos os lugares.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Se o código estiver errado, não importa se o algoritmo estiver correto}
+\label{segredos:errado}
+
+Algoritmos criptográficos estão sujeitos aos mesmos bugs de programação comuns que afetam outros softwares. Em 2014, a Apple divulgou que o software de segurança de rede em seus computadores Macintosh e iPhones continha uma linha de código extra "goto fail". Era apenas um duplicado não intencional da linha acima, mas teve o efeito de contornar uma verificação crucial de segurança e tornar as comunicações vulneráveis a interceptação por um adversário.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{O Inimigo Conhece Seu Sistema}
+\label{segredos:inimigo}
+
+A última lição da história pode parecer contra-intuitiva. É que um método criptográfico, especialmente aquele projetado para uso generalizado, deve ser considerado mais confiável se for amplamente conhecido e não parece ter sido quebrado, do que se o próprio método tiver sido mantido em segredo.
+
+O linguista flamengo Auguste Kerckhoffs articulou esse princípio em um ensaio de criptografia militar de 1883. Como ele explicou:
+"O sistema não deve depender do segredo e pode cair nas mãos do inimigo sem causar problemas... Aqui, eu me refiro ao sistema, não à chave em si, mas à parte material do sistema: tabelas, dicionários ou qualquer outro aparato mecânico necessário para aplicá-lo. Na verdade, não é necessário criar fantasmas imaginários ou suspeitar da integridade de funcionários ou subordinados para entender que, se um sistema que exige sigilo cair nas mãos de muitas pessoas, ele poderia ser comprometido em cada engajamento em que qualquer uma delas participe."
+
+Em outras palavras, se um método criptográfico é amplamente utilizado, é irrealista esperar que ele possa permanecer em segredo por muito tempo. Portanto, ele deve ser projetado de forma a permanecer seguro, mesmo que tudo, exceto uma pequena quantidade de informação (a chave), seja exposto.
+
+Shannon reafirmou o Princípio de Kerckhoffs em seu artigo sobre sistemas de comunicação secreta: "Vamos assumir que o inimigo conhece o sistema que está sendo usado". Ele prosseguiu escrevendo:
+"Essa suposição é realmente a que é normalmente usada em estudos criptográficos. É pessimista e, portanto, segura, mas a longo prazo realista, pois se deve esperar que seu sistema seja descoberto eventualmente."
+
+O Princípio de Kerckhoffs é frequentemente violado na prática moderna de segurança na Internet. Empresas iniciantes na Internet rotineiramente fazem anúncios ousados sobre novos métodos de criptografia proprietários inovadores, que se recusam a submeter à análise pública, explicando que o método deve ser mantido em segredo para proteger sua segurança. Criptógrafos geralmente encaram tais alegações de "segurança através da obscuridade" com extrema ceticismo.
+
+Até organizações bem estabelecidas às vezes desobedecem ao Princípio de Kerckhoffs. O Content Scrambling System (CSS) usado em DVDs (discos digitais versáteis) foi desenvolvido por um consórcio de estúdios de cinema e empresas de eletrônicos de consumo em 1996. Ele criptografa o conteúdo dos DVDs para limitar a cópia não autorizada. O método foi mantido em segredo para evitar a fabricação de reprodutores de DVD não licenciados. O algoritmo de criptografia, consequentemente, nunca foi amplamente analisado por especialistas e acabou sendo fraco, sendo quebrado dentro de três anos após o anúncio. Programas de descriptografia do CSS, juntamente com inúmeros conteúdos de DVD "ripados" não autorizados, logo se espalharam amplamente na Internet.
+
+O Princípio de Kerckhoffs foi institucionalizado na forma de padrões de criptografia. O Data Encryption Standard (DES) foi adotado como um padrão nacional na década de 1970 e é amplamente utilizado nos mundos dos negócios e das finanças. O design de hardware específico e o progresso inexorável da Lei de Moore tornaram a busca exaustiva mais viável nos últimos anos, e o DES não é mais considerado seguro. Um padrão mais novo, o Advanced Encryption Standard (AES), foi adotado em 2002 após uma revisão completa e pública. É precisamente porque esses métodos de criptografia são tão amplamente conhecidos que a confiança neles pode ser alta. Eles foram submetidos tanto à análise profissional quanto à experimentação amadora, e nenhuma deficiência séria foi descoberta.
+
+Essas lições são tão verdadeiras hoje quanto sempre foram. No entanto, algo mais, algo fundamental sobre a criptografia, é diferente hoje. No final do século XX, os métodos criptográficos deixaram de ser segredos de estado e se tornaram produtos de consumo.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{O Segredo Muda para Sempre}
+\label{segredos:muda}
+
+Por 4.000 anos, a criptografia tratava de garantir que Eve não pudesse ler a mensagem de Alice para Bob, caso Eve interceptasse a mensagem no caminho. Nada poderia ser feito se a própria chave fosse de alguma forma descoberta. Manter a chave em segredo era, portanto, de importância inestimável e era um negócio muito incerto.
+
+Se Alice e Bob acordassem a chave quando se encontrassem, como Bob poderia manter a chave em segredo durante os perigos da viagem? Proteger as chaves era uma prioridade militar e diplomática de importância suprema. Pilotos e soldados foram instruídos de que, mesmo diante da morte certa por um ataque inimigo, sua primeira responsabilidade era destruir seus livros de códigos. A descoberta dos códigos poderia custar milhares de vidas. A confidencialidade dos códigos era tudo.
+
+E se Alice e Bob nunca se encontrassem, como poderiam concordar em uma chave sem já ter um método seguro para transmitir a chave? Isso parecia uma limitação fundamental: a comunicação segura era prática apenas para pessoas que poderiam combinar de se encontrar antecipadamente ou que tinham acesso a um método prévio de comunicação segura (como mensageiros militares) para levar a chave entre eles. Se as comunicações na Internet tivessem que seguir essa suposição, o comércio eletrônico nunca teria decolado. Pacotes de bits percorrendo a rede estão completamente desprotegidos contra espionagem.
+
+E então, na década de 1970, tudo mudou. Whitfield Diffie era um matemático de 32 anos que tinha sido obcecado por criptografia desde seus anos como estudante de graduação no MIT. Martin Hellman, de 31 anos, era um graduado da Bronx High School of Science e professor assistente em Stanford. Diffie havia percorrido o país em busca de colaboradores na matemática da comunicação secreta. Esta não era uma área fácil de entrar, pois a maior parte do trabalho sério nesta área estava sendo feito atrás das portas firmemente trancadas da Agência de Segurança Nacional. Ralph Merkle, um estudante de pós-graduação em ciência da computação de 24 anos, estava explorando uma nova abordagem para comunicação segura. Na descoberta mais importante de toda a história da criptografia, Diffie e Hellman encontraram uma realização prática das ideias de Merkle, que eles apresentaram em um artigo intitulado "Novas Direções em Criptografia".
+
+O artigo descrevia o seguinte: Uma forma de Alice e Bob, sem qualquer acordo prévio, concordarem em uma chave secreta, conhecida apenas por eles dois, usando mensagens entre eles que não são secretas de forma alguma.
+
+Em outras palavras, desde que Alice e Bob possam se comunicar um com o outro, eles podem estabelecer uma chave secreta. Não importa se Eve ou qualquer outra pessoa pode ouvir tudo o que eles dizem. Alice e Bob podem chegar a um consenso sobre uma chave secreta, e não há maneira de Eve usar o que ela ouve para descobrir qual é essa chave secreta. Isso é verdade mesmo que Alice e Bob nunca tenham se conhecido antes e nunca tenham feito nenhum acordo prévio.
+
+O impacto dessa descoberta não pode ser exagerado. A arte da comunicação secreta era um monopólio do governo - e assim tinha sido desde o surgimento da escrita. Os governos tinham os maiores interesses em segredos, e os cientistas mais inteligentes trabalhavam para os governos. Mas havia outra razão pela qual os governos haviam feito toda a criptografia séria: Somente os governos tinham os recursos para garantir a produção, proteção e distribuição das chaves em que a comunicação secreta dependia. Se as chaves secretas pudessem ser produzidas por comunicação pública, todos poderiam usar criptografia. Eles só precisavam saber como; não precisavam de exércitos ou corajosos mensageiros para transmitir e proteger as chaves.
+
+Diffie, Hellman e Merkle apelidaram sua descoberta de "criptografia de chave pública". Embora sua importância não fosse reconhecida na época, é a invenção que tornou possível o comércio eletrônico. Se Alice é você e Bob é a Amazon, não há possibilidade de um encontro físico; como você poderia ir fisicamente à Amazon para obter uma chave? A Amazon até mesmo tem uma localização física? Se Alice deve enviar seu número de cartão de crédito para a Amazon com segurança, a criptografia tem que ser realizada na hora, ou melhor, nos dois locais separados pela Internet. Diffie-Hellman-Merkle, e uma série de métodos relacionados que se seguiram, tornaram possíveis transações seguras na Internet. Se você já comprou algo em uma loja online, foi um criptógrafo sem perceber. Seu computador e o computador da loja desempenharam os papéis de Alice e Bob.
+
+Parece extremamente contraintuitivo que Alice e Bob possam concordar em uma chave secreta por meio de um canal de comunicação pública. Não foi tanto que a comunidade científica tentou e falhou em fazer o que Diffie, Hellman e Merkle fizeram. Nunca lhes ocorreu tentar porque parecia tão óbvio que Alice tinha que dar a Bob as chaves de alguma forma.
+
+Até mesmo o grande Shannon não percebeu essa possibilidade. Em seu artigo de 1949, que unificou todos os métodos criptográficos conhecidos em um único framework, ele não percebeu que poderia haver uma alternativa. "A chave deve ser transmitida por meios não interceptáveis dos pontos de transmissão aos pontos de recepção", escreveu ele. Isso não é verdade. Alice e Bob podem obter a mesma chave secreta, mesmo que todas as suas mensagens sejam interceptadas.
+
+O quadro básico de como Alice comunica seu segredo a Bob permanece como mostrado na Figura 5.6. Alice envia a Bob uma mensagem codificada, e Bob usa uma chave secreta para decodificá-la. Eve pode interceptar o texto cifrado no caminho.
+
+%%%%%%%QUADRO%%%%%%%%%
+Alice e Bob podem obter a mesma chave secreta, mesmo que todas as suas mensagens sejam interceptadas.
+%%%%%%%%%%%%%%%%%%%%%%
+
+O objetivo é que Alice faça a criptografia de tal maneira que seja impossível para Eve decifrar a mensagem de qualquer outra forma que não seja uma busca por força bruta em todas as chaves possíveis. Se o problema de decifração for "difícil" nesse sentido, o fenômeno do crescimento exponencial se torna o aliado de Alice e Bob. Por exemplo, suponha que eles estejam usando numerais decimais comuns como chaves e suas chaves tenham 10 dígitos. Se eles suspeitam que os computadores de Eve estão ficando poderosos o suficiente para buscar todas as chaves possíveis, eles podem mudar para chaves de 20 dígitos. O tempo que Eve levaria aumentaria em um fator de 10\^10 = 10.000.000.000. Mesmo que os computadores de Eve fossem poderosos o suficiente para quebrar qualquer chave de 10 dígitos em um segundo, levaria mais de 300 anos para quebrar uma chave de 20 dígitos!
+
+A busca exaustiva é sempre uma maneira para Eve descobrir a chave. Mas se Alice criptografa sua mensagem usando uma cifra de substituição ou Vigenère, a mensagem criptografada terá padrões que permitem que Eve encontre a chave muito mais rapidamente. O truque é encontrar um meio de criptografar a mensagem de forma que o texto cifrado não revele padrões dos quais a chave possa ser inferida.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{O Protocolo de Acordo de Chave}
+\label{}
+
+A invenção crucial foi o conceito de uma computação unidirecional - uma computação com duas propriedades importantes: ela pode ser feita rapidamente, mas não pode ser desfeita rapidamente. Para ser mais preciso, a computação combina rapidamente dois números, x e y, para produzir um terceiro número, que chamaremos de x × y. Se você conhece o valor de x × y, não há maneira rápida de descobrir qual valor de y foi usado para produzi-lo, mesmo se você também conhecer o valor de x. Ou seja, se você conhece os valores de x e o resultado z, a única maneira de encontrar um valor de y para o qual z = x × y é por tentativa e erro. Tal busca exaustiva levaria tempo que cresce exponencialmente com o número de dígitos de z - e seria praticamente impossível para números com algumas centenas de dígitos. A computação unidirecional de Diffie e Hellman também tem uma terceira propriedade importante: (x × y) × z sempre produz o mesmo resultado que (x × z) × y. (Diffie e Hellman usam x × y = o resto quando xy é dividido por p, onde p é um número primo fixo padrão da indústria.)
+
+O protocolo de acordo de chave parte de uma base de conhecimento público: como fazer a computação x × y e também o valor de um número grande específico, g. Todas essas informações estão disponíveis para o mundo inteiro. Sabendo disso, aqui está como Alice e Bob procedem:
+
+Alice e Bob escolhem cada um um número aleatório. Chamaremos o número de Alice de a e o número de Bob de b. Chamaremos a e b de chaves secretas de Alice e Bob, respectivamente. Alice e Bob mantêm suas chaves secretas em segredo. Ninguém, exceto Alice, conhece o valor de a, e ninguém, exceto Bob, conhece o valor de b.
+
+Alice calcula g × a, e Bob calcula g × b (não é difícil de fazer). Os resultados são chamados de suas chaves públicas A e B, respectivamente.
+
+Alice envia para Bob o valor de A, e Bob envia para Alice o valor de B. Não importa se Eve intercepta essas comunicações; A e B não são números secretos.
+
+Quando ela recebe a chave pública B de Bob, Alice calcula B × a, usando sua chave secreta a, bem como a chave pública de Bob B. Da mesma forma, quando Bob recebe A de Alice, ele calcula A × b.
+
+Embora Alice e Bob tenham feito cálculos diferentes, eles acabaram com o mesmo valor. Bob calcula A × b - ou seja, (g × a) × b (consulte a etapa 2 - A é g × a). Alice calcula B × a - ou seja, (g × b) × a. Por causa da terceira propriedade da computação unidirecional, esse número é novamente (g × a) × b - o mesmo valor, obtido de uma maneira diferente!
+
+%%%%%%%%%%%%QUADRO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Titulo: TEMOS CERTEZA QUE NINGUÉM PODE QUEBRAR O CÓDIGO?
+
+Ninguém provou matematicamente que os algoritmos de criptografia de chave pública são inquebráveis, apesar dos esforços determinados de importantes matemáticos e cientistas da computação para fornecer uma prova absoluta de sua segurança. Portanto, nossa confiança neles se baseia no princípio fundamental: Ninguém os quebrou até agora. Se alguém sabe de um método rápido, provavelmente é a Agência de Segurança Nacional (NSA), que opera em um ambiente de extrema secreção. Talvez a NSA saiba como, mas não está revelando. Ou talvez algum indivíduo inventivo tenha quebrado o código, mas prefere lucro à fama e está discretamente acumulando enormes ganhos ao decodificar mensagens sobre transações financeiras. Nossa aposta é que ninguém sabe como e ninguém saberá.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Este valor compartilhado, chamado de K, é a chave que Alice e Bob usarão para criptografar e descriptografar suas mensagens subsequentes, usando o método padrão de criptografia que eles escolherem.
+
+Aqui está o ponto crucial. Suponha que Eve tenha estado ouvindo as comunicações de Alice e Bob. Ela tem acesso às informações de A e B que foram enviadas, e ela conhece o valor de g porque é um padrão da indústria. Ela também conhece todos os algoritmos e protocolos que Alice e Bob estão usando; Eve também leu o artigo de Diffie e Hellman! Mas para calcular a chave K, Eve precisaria conhecer uma das chaves secretas, seja a ou b. Ela não conhece; apenas Alice conhece a, e apenas Bob conhece b. Para números com algumas centenas de dígitos, ninguém sabe como encontrar a ou b a partir de g, A e B sem pesquisar por valores de teste impossíveis.
+
+Alice e Bob podem realizar seus cálculos com computadores pessoais ou hardware simples de propósito especial. Mas mesmo os computadores mais poderosos não são nem de perto rápidos o suficiente para permitir que Eve quebre o sistema - pelo menos não por qualquer método conhecido.
+
+A exploração dessa diferença no esforço computacional foi o avanço de Diffie, Hellman e Merkle. Eles mostraram como criar chaves secretas compartilhadas sem exigir canais seguros.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Chaves Públicas para Mensagens Privadas}
+\label{}
+
+Suponha que Alice queira ter um meio para que qualquer pessoa no mundo possa enviar-lhe mensagens criptografadas que somente ela possa descriptografar. Ela pode fazer isso com uma pequena variação do protocolo de acordo de chaves. Todas as computações são as mesmas do protocolo de acordo de chaves, mas elas ocorrem em uma ordem ligeiramente diferente.
+
+Alice escolhe uma chave secreta a e calcula a chave pública correspondente A. Ela publica A em um diretório.
+
+Se Bob (ou qualquer outra pessoa) quiser enviar a Alice uma mensagem criptografada, ele obtém a chave pública de Alice no diretório. Em seguida, ele escolhe sua própria chave secreta b e calcula B como antes. Ele também usa a chave pública de Alice A do diretório para calcular uma chave de criptografia K, assim como no protocolo de acordo de chaves: K = A × b. Bob usa K como uma chave para criptografar uma mensagem para Alice e envia a Alice o texto cifrado, juntamente com B. Como ele usa K apenas uma vez, K é como uma chave de uso único.
+
+Quando Alice recebe a mensagem criptografada de Bob, ela pega o valor B que veio com a mensagem, junto com sua chave secreta a, da mesma forma que no protocolo de acordo de chaves, e calcula o mesmo K = B × a. Agora, Alice usa K como chave para descriptografar a mensagem. Eve não pode descriptografar a mensagem porque ela não conhece as chaves secretas.
+
+%%%%%%%%%%%%%%%%%%%%%%QUADRO NA LATERAL ESQUERDA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Com a criptografia de chave pública, qualquer pessoa pode enviar e-mails criptografados para qualquer um por meio de um canal de comunicação inseguro e publicamente exposto.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Isso pode parecer apenas uma simples variação do acordo de chaves, mas resulta em uma mudança conceitual importante em como pensamos sobre comunicação segura. Com a criptografia de chave pública, qualquer pessoa pode enviar mensagens criptografadas para qualquer pessoa por meio de um caminho de comunicação público e inseguro. A única coisa sobre a qual eles precisam concordar é usar o método Diffie-Hellman-Merkle - e saber disso não é útil para um adversário que está tentando decifrar uma mensagem interceptada.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Assinaturas Digitais}
+\label{}
+
+Além da comunicação secreta, uma segunda conquista revolucionária da criptografia de chave pública é prevenir falsificações e representações em transações eletrônicas.
+
+Suponha que Alice queira criar um anúncio público. Como as pessoas que veem o anúncio podem ter certeza de que ele realmente vem de Alice - que não é uma falsificação? O que é necessário é um método para marcar a mensagem pública de Alice de tal forma que qualquer pessoa possa verificar facilmente que a marca é de Alice e ninguém possa falsificá-la. Essa marca é chamada de assinatura digital.
+
+Para continuar com o cenário que já usamos, continuaremos falando sobre Alice enviando uma mensagem para Bob, com Eve tentando fazer algo malicioso enquanto a mensagem está em trânsito. No entanto, neste caso, não estamos preocupados com o sigilo da mensagem de Alice - apenas em assegurar a Bob que o que ele recebe é realmente o que Alice enviou. Em outras palavras, a mensagem pode não ser secreta; talvez seja um anúncio público importante. Bob precisa ter confiança de que a assinatura que ele vê na mensagem é de Alice e que a mensagem não pode ter sido adulterada antes de ele recebê-la.
+
+Protocolos de assinatura digital usam chaves públicas e chaves secretas, mas de maneira diferente. Um protocolo de assinatura digital consiste em duas computações: uma que Alice usa para processar sua mensagem e criar a assinatura, e outra que Bob usa para verificar a assinatura. Alice usa sua chave secreta e a própria mensagem para criar a assinatura. Qualquer pessoa pode então usar a chave pública de Alice para verificar a assinatura. O ponto é que todos podem conhecer a chave pública e, assim, verificar a assinatura, mas apenas a pessoa que conhece a chave secreta poderia ter produzido a assinatura. Isso é o oposto do cenário da seção anterior, onde qualquer um pode criptografar uma mensagem, mas apenas a pessoa com a chave secreta pode descriptografá-la.
+
+Um esquema de assinatura digital requer um método computacional que torne a assinatura fácil se você tiver a chave secreta e a verificação fácil se tiver a chave pública - mas que torne computacionalmente inviável produzir uma assinatura verificável se você não conhece a chave secreta. Além disso, a assinatura depende da mensagem e da chave secreta da pessoa que a assina. Portanto, o protocolo de assinatura digital atesta a integridade da mensagem - que ela não foi adulterada em trânsito - bem como a sua autenticidade - que a pessoa que a enviou realmente é Alice.
+
+Em sistemas reais típicos, usados para assinar e-mails não criptografados, por exemplo, Alice não criptografa a mensagem em si. Em vez disso, para acelerar o cálculo da assinatura, ela primeiro calcula uma versão compacta da mensagem, chamada de resumo da mensagem, que é muito mais curta que a própria mensagem. Requer menos cálculos para produzir a assinatura para o resumo do que para a mensagem completa. Como os resumos da mensagem são calculados é conhecimento público. Quando Bob recebe a mensagem assinada de Alice, ele calcula o resumo da mensagem e verifica se ele é idêntico ao que ele obtém descriptografando a assinatura anexada usando a chave pública de Alice.
+
+O processo de resumir precisa produzir uma espécie de impressão digital - algo pequeno que seja praticamente único para o original. Esse processo de compactação deve evitar um risco associado ao uso de resumos. Se Eve pudesse produzir uma mensagem diferente com o mesmo resumo, então ela poderia anexar a assinatura de Alice à mensagem de Eve. Bob não perceberia que alguém adulterou a mensagem antes de ele recebê-la. Quando ele passasse pelo processo de verificação, ele calcularia o resumo da mensagem de Eve, compararia-o ao resultado de descriptografar a assinatura que Alice anexou à mensagem de Alice e os encontraria idênticos. Esse risco é a fonte da insegurança da função de resumo de mensagem MD5 mencionada anteriormente neste capítulo, que está deixando a comunidade criptográfica cautelosa sobre o uso de resumos de mensagem.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{RSA}
+\label{}
+
+Diffie e Hellman introduziram o conceito de assinaturas digitais em seu artigo de 1976. Eles sugeriram uma abordagem para projetar assinaturas, mas não apresentaram um método concreto. O desafio de criar um esquema prático de assinatura digital foi deixado como um desafio para a comunidade de ciência da computação.
+
+O desafio foi superado em 1977 por Ron Rivest, Adi Shamir e Len Adleman do Laboratório de Ciência da Computação do MIT.42 O algoritmo RSA (Rivest-Shamir-Adleman) não apenas era um esquema prático de assinatura digital, mas também poderia ser usado para mensagens confidenciais. Com o RSA, cada pessoa gera um par de chaves: uma chave pública e uma chave secreta. Vamos chamar a chave pública de Alice de A e sua chave secreta de a. As chaves públicas e privadas são inversas: se você transformar um valor com a, então transformar o resultado com A recupera o valor original. Se você transformar um valor com A, então transformar o resultado com a recupera o valor original.
+
+Aqui está como os pares de chaves RSA são usados. As pessoas publicam suas chaves públicas e mantêm suas chaves secretas para si mesmas. Se Bob quiser enviar uma mensagem para Alice, ele escolhe um algoritmo padrão, como DES, e uma chave K, e ele transforma K usando a chave pública de Alice A. Alice transforma o resultado usando sua chave secreta a para recuperar K. Como em toda criptografia de chave pública, apenas Alice conhece sua chave secreta, então apenas ela pode recuperar K e descriptografar a mensagem.
+
+Para produzir uma assinatura digital, Alice transforma a mensagem usando sua chave secreta a e usa o resultado como a assinatura a ser enviada junto com a mensagem. Qualquer um pode então verificar a assinatura transformando-a com a chave pública de Alice A para verificar se isso coincide com a mensagem original. Como apenas Alice conhece sua chave secreta, apenas Alice poderia ter produzido algo que, quando transformado com sua chave pública, reproduzirá a mensagem original.
+
+%%%%%%%%%%%%%%%%%%%%%%QUADRO NA LATERAL ESQUERDA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Uma descoberta na fatoração tornaria o RSA inútil e minaria muitos dos padrões atuais de segurança na Internet.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Parece ser inatingível no sistema de criptografia RSA - assim como no sistema Diffie-Hellman-Merkle - calcular uma chave secreta correspondente a uma chave pública. O RSA usa uma computação unidirecional diferente da usada pelo sistema Diffie-Hellman-Merkle. O RSA é seguro apenas se levar muito mais tempo para fatorar um número de n dígitos do que multiplicar dois números de n/2 dígitos. A dependência do RSA na dificuldade de fatoração gerou um enorme interesse em encontrar maneiras rápidas de fatorar números. Até a década de 1970, isso era um passatempo matemático de interesse teórico apenas. Pode-se multiplicar números em um tempo comparável ao número de dígitos, enquanto fatorar um número requer esforço comparável ao valor do próprio número, pelo que se sabe. Uma descoberta na fatoração tornaria o RSA inútil e minaria muitos dos padrões atuais de segurança na Internet.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Certificados e Autoridades de Certificação}
+\label{}
+
+Há um problema com os métodos de chave pública que descrevemos até agora. Como Bob pode saber que a "Alice" com quem está se comunicando realmente é a Alice? Qualquer pessoa poderia estar do outro lado da comunicação de acordo com o acordo de chave, fingindo ser a Alice. Ou, para mensagens seguras, depois que Alice coloca sua chave pública no diretório, Eve pode manipular o diretório, substituindo sua própria chave no lugar da de Alice. Então, qualquer um que tente usar a chave para criar mensagens secretas destinadas a Alice estará na verdade criando mensagens que Eve, não Alice, pode ler. Se "Bob" é você e "Alice" é o prefeito ordenando uma evacuação da cidade, um impostor poderia estar tentando criar um pânico. Se "Bob" é o seu computador e "Alice" é o computador do seu banco, "Eve" poderia estar tentando roubar o seu dinheiro!
+
+É aqui que as assinaturas digitais podem ajudar. Alice vai a uma autoridade confiável, à qual ela apresenta sua chave pública juntamente com prova de sua identidade. A autoridade assina digitalmente a chave de Alice, produzindo uma chave assinada chamada certificado. Agora, em vez de apenas apresentar sua chave quando deseja se comunicar, Alice apresenta o certificado. Qualquer pessoa que queira usar a chave para se comunicar com Alice verifica primeiro a assinatura da autoridade para verificar se a chave é legítima.43
+
+As pessoas verificam um certificado verificando a assinatura da autoridade confiável. Como elas sabem que a assinatura em um certificado realmente é a assinatura da autoridade confiável e não uma fraude que Eve criou para emitir certificados falsos? A assinatura da autoridade é garantida por outro certificado, assinado por outra autoridade, e assim por diante, até chegarmos a uma autoridade cujo certificado é amplamente conhecido. Dessa forma, a chave pública de Alice é garantida não apenas por um certificado e uma única assinatura, mas por uma cadeia de certificados, cada um com uma assinatura garantida pelo próximo certificado.
+
+Organizações que emitem certificados são chamadas de autoridades de certificação. As autoridades de certificação podem ser criadas para uso limitado; por exemplo, uma corporação pode atuar como uma autoridade de certificação que emite certificados para uso em sua rede corporativa. Também existem empresas que fazem negócios vendendo certificados para uso público. A confiança que você deve depositar em um certificado depende de duas coisas: sua avaliação da confiabilidade da assinatura no certificado e também sua avaliação da política da autoridade de certificação em estar disposta a assinar coisas.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%QUADRO NA LATERAL ESQUERDA%%%%%%%%%%%%%%%%%%%%%%%%%%%
+TITULO: CERTIFICADOS COMERCIAIS
+A VeriSign, que atualmente é a principal autoridade de certificação comercial, emite três classes de certificados pessoais. A Classe 1 é para garantir que um navegador esteja associado a um determinado endereço de e-mail e não faz reivindicações sobre a verdadeira identidade de ninguém. A Classe 2 oferece um nível modesto de verificação de identidade. Organizações que emitem certificados Classe 2 devem exigir um pedido com informações que possam ser verificadas em registros de funcionários ou registros de crédito. Certificados Classe 3 exigem aplicação pessoal para verificação de identidade.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Criptografia para Todos}
+\label{}
+
+Na vida real, nenhum de nós está ciente de que estamos realizando cálculos unidirecionais enquanto navegamos na Web. Mas toda vez que encomendamos um livro da Amazon, verificamos nosso saldo bancário ou de cartão de crédito, ou pagamos por uma compra usando o PayPal, é exatamente isso que acontece. O sinal revelador de que uma transação da web criptografada está ocorrendo é que o URL do site começa com https (o s é para seguro) em vez de http. O computador do consumidor e o computador da loja ou do banco negociam a criptografia, usando a criptografia de chave pública, sem o conhecimento das pessoas envolvidas na transação. A loja atesta sua identidade ao apresentar um certificado assinado por uma autoridade de certificação que o computador do consumidor foi pré-configurado para reconhecer. Novas chaves são geradas para cada nova transação. Chaves são baratas. Mensagens secretas estão por toda parte na Internet. Todos somos agora criptógrafos.
+
+%%%%%%%%%%%%%%%%%%%%%%%%QUADRO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Agora todos nós somos criptógrafos.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Inicialmente, a criptografia de chave pública era tratada como uma curiosidade matemática. Len Adleman, um dos inventores do RSA, achou que o artigo do RSA seria "o artigo menos interessante em que eu já estive".44 Mesmo a Agência de Segurança Nacional (NSA), até 1977, não estava excessivamente preocupada com a disseminação desses métodos. Simplesmente não compreendeu como a revolução dos computadores pessoais, a apenas alguns anos de distância, permitiria a qualquer pessoa com um PC doméstico trocar mensagens criptografadas que até mesmo a NSA não poderia decifrar.
+
+Mas à medida que a década de 1980 avançava e o uso da Internet aumentava, o potencial da criptografia ubíqua começou a se tornar aparente. As agências de inteligência ficaram cada vez mais preocupadas, e a aplicação da lei temia que as comunicações criptografadas pudessem pôr fim à interceptação governamental, uma de suas ferramentas mais poderosas. No lado comercial, a indústria começou a perceber que os clientes desejariam comunicação privada, especialmente em uma era de comércio eletrônico. No final da década de 1980 e início da década de 1990, as administrações Bush e Clinton propuseram controlar a disseminação de sistemas criptográficos.
+
+Em 1994, a administração Clinton apresentou um plano para um "Padrão de Criptografia com Depósito de Chaves" que seria usado em telefones que forneciam comunicações criptografadas. A tecnologia, chamada de "Clipper", era um chip de criptografia desenvolvido pela Agência de Segurança Nacional (NSA) que incluía uma porta dos fundos - uma chave extra mantida pelo governo, que permitiria que as agências de aplicação da lei e de inteligência decifrassem as comunicações telefônicas. De acordo com a proposta, o governo compraria apenas telefones Clipper para comunicação segura. Qualquer pessoa que quisesse fazer negócios com o governo por meio de um telefone seguro também teria que usar um telefone Clipper. No entanto, a recepção da indústria foi fria e o plano foi abandonado. Mas, em uma sequência de propostas modificadas a partir de 1995, a Casa Branca tentou convencer a indústria a criar produtos de criptografia com portas dos fundos semelhantes. O incentivo aqui, além da punição, era a lei de controle de exportação. De acordo com a lei dos EUA, produtos criptográficos não podiam ser exportados sem licença, e violar os controles de exportação poderia resultar em severas penalidades criminais. A administração propôs que o software de criptografia receberia licenças de exportação apenas se contivesse portas dos fundos.
+
+As subsequentes negociações frequentemente acaloradas, às vezes referidas como "guerras da criptografia", ocorreram ao longo dos anos 1990. A aplicação da lei e a segurança nacional argumentavam a necessidade de controles de criptografia. Do outro lado do debate estavam as empresas de tecnologia, que não queriam regulamentação governamental, e grupos de liberdades civis, que alertavam para o potencial de aumento da vigilância das comunicações. Em essência, os formuladores de políticas não conseguiam compreender a transformação de uma importante tecnologia militar em uma ferramenta pessoal cotidiana.
+
+Conhecemos Phil Zimmermann no início deste capítulo, e sua carreira agora se torna uma parte central da história. Zimmermann era um programador e libertário que tinha interesse em criptografia desde a juventude. Ele havia lido uma coluna da Scientific American sobre criptografia RSA em 1977, mas não tinha acesso aos tipos de computadores necessários para implementar aritmética em números enormes, como os algoritmos RSA exigiam. Mas os computadores se tornariam poderosos o suficiente se você esperasse. À medida que a década de 1980 avançava, tornou-se possível implementar o RSA em computadores domésticos. Zimmermann começou a produzir software de criptografia para as pessoas, para combater a ameaça de aumento da vigilância governamental. Como ele mais tarde testemunhou perante o Congresso:
+
+O poder dos computadores havia mudado o equilíbrio em direção à facilidade de vigilância. No passado, se o governo quisesse violar a privacidade dos cidadãos comuns, ele tinha que despender uma certa quantidade de esforço para interceptar e abrir o correio em papel e lê-lo, ou ouvir e possivelmente transcrever conversas telefônicas faladas. Isso é análogo a pescar com um anzol e uma linha, um peixe de cada vez. Felizmente para a liberdade e a democracia, esse tipo de monitoramento intensivo de mão de obra não é prático em grande escala. Hoje, o correio eletrônico está gradualmente substituindo o correio em papel convencional e em breve será a norma para todos, não a novidade que é hoje. Ao contrário do correio em papel, as mensagens de e-mail são simplesmente muito fáceis de interceptar e analisar em busca de palavras-chave interessantes. Isso pode ser feito facilmente, rotineiramente, automaticamente e de maneira indetectável em grande escala. Isso é análogo à pesca com rede de arrasto - fazendo uma diferença orwelliana quantitativa e qualitativa para a saúde da democracia.45
+
+A criptografia foi a resposta. Se os governos tivessem poderes ilimitados de vigilância sobre as comunicações eletrônicas, as pessoas em todo lugar precisavam de criptografia fácil de usar, barata e inquebrável para que pudessem se comunicar sem que os governos fossem capazes de entendê-las.
+
+Zimmermann enfrentou obstáculos que teriam desanimado almas menos fervorosas. O RSA era uma invenção patenteada. O MIT havia concedido uma licença exclusiva para a RSA Data Security Company, que produzia software de criptografia comercial para empresas, e a RSA Data Security não tinha interesse em conceder a Zimmermann a licença que ele precisaria para distribuir seu código RSA livremente, como ele desejava fazer.
+
+E havia a política governamental, que era, é claro, exatamente o problema para o qual Zimmermann sentia que seu software de criptografia era a solução. Em 24 de janeiro de 1991, o senador Joseph Biden, co-patrocinador da legislação antiterrorista Senate Bill 26646, inseriu uma nova linguagem no projeto de lei:
+
+"É o entendimento do Congresso que os provedores de serviços de comunicações eletrônicas e os fabricantes de equipamentos de serviços de comunicações eletrônicas devem garantir que os sistemas de comunicações permitam que o governo obtenha os conteúdos em texto simples de voz, dados e outras comunicações quando apropriadamente autorizado por lei."
+
+Essa linguagem recebeu uma reação furiosa de grupos de liberdades civis e acabou não sobrevivendo, mas Zimmermann decidiu tomar as rédeas da situação.
+
+Até junho de 1991, Zimmermann havia concluído uma versão funcional de seu software. Ele o chamou de PGP, abreviação para "Pretty Good Privacy" (Privacidade Bastante Boa), em homenagem às míticas "Pretty Good Groceries" de Ralph, que patrocinavam o programa "Prairie Home Companion" de Garrison Keillor. O software apareceu misteriosamente em vários computadores dos EUA, disponível para qualquer pessoa no mundo baixar. Em breve, cópias estavam por toda parte, não apenas nos Estados Unidos, mas em todo o mundo. Nas palavras de Zimmermann:
+
+"Esta tecnologia pertence a todos." O gênio estava fora da garrafa e não voltaria atrás.
+
+Zimmermann pagou um preço por seu gesto libertário. Primeiro, a RSA Data Security estava confiante de que essa tecnologia pertencia a ela, não a "todos". A empresa estava enfurecida por sua tecnologia patenteada estar sendo distribuída gratuitamente. Segundo, o governo estava furioso. Ele iniciou uma investigação criminal por violação das leis de controle de exportação, embora não estivesse claro quais leis, se alguma, Zimmermann havia violado. Eventualmente, o MIT intermediou um acordo que permitiu a Zimmermann usar a patente RSA e elaborou uma maneira de colocar o PGP na Internet para uso nos Estados Unidos e em conformidade com os controles de exportação.
+
+Até o final da década, o progresso do comércio eletrônico havia superado o debate sobre a guarda de chaves, e o governo encerrou sua investigação criminal sem acusação. Zimmermann construiu um negócio em torno do PGP, enquanto ainda permitia downloads gratuitos para indivíduos. Seu site contém depoimentos de grupos de direitos humanos na Europa Oriental e na Guatemala, atestando a força libertadora da comunicação secreta entre indivíduos e agências que trabalham contra regimes opressivos. Zimmermann havia vencido.
+
+Mais ou menos.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Criptografia em Situação Instável}
+\label{}
+
+Hoje em dia, todas as transações bancárias e de cartão de crédito na Internet são criptografadas. Muitos emails e os discos rígidos de muitos laptops são criptografados. Há uma preocupação generalizada com a segurança da informação, roubo de identidade e deterioração da privacidade pessoal.
+
+Ao mesmo tempo, a criptografia está ameaçada por duas forças opostas: indiferença e medo. Em contextos nos quais as pessoas precisam lembrar chaves de criptografia, por exemplo, para descriptografar os dados armazenados em seus laptops, a inconveniência de lembrar as chaves é suficiente para que alguns usuários prefiram não usá-las (ou definir sua chave de criptografia como "CHAVE" da mesma forma que definem sua senha como "SENHA"). E os usuários não são as únicas partes irresponsáveis. Em 2017, a Apple enviou computadores com uma senha crucial definida como nula, o que significava que qualquer pessoa poderia comprometer as máquinas, mesmo operando remotamente pela Internet.
+
+Cadeias de caracteres com tamanho suficiente para serem difíceis de adivinhar por um adversário também são difíceis de serem lembradas por seus proprietários legítimos. Em janeiro de 2018, quando um alerta falso sobre um míssil balístico entrando foi enviado para o povo do Havaí, demorou quase 40 minutos para emitir uma correção em parte porque um oficial não conseguia lembrar sua senha do Twitter. Biometria (impressões digitais, varreduras de íris e similares) é promovida como uma alternativa mais conveniente, mas gera preocupações com a privacidade se essas informações pessoais forem armazenadas remotamente. Diante do risco de não conseguir recuperar dados valiosos por causa de simples esquecimento, alguns, de forma imprudente, nem os criptografam.
+
+Ao mesmo tempo, os cidadãos esperam poder confiar em seu governo, sentem que não têm nada a esconder e sabem que devem temer terroristas e criminosos. Os alertas de Zimmerman sobre a vigilância governamental desvaneceram. Com cada relatório (seja justificado ou não) de que estão em perigo iminente, algumas pessoas são mais propensas a aceitar a vigilância governamental e a desconfiar de qualquer pessoa que queira se comunicar em segredo das autoridades policiais. "Eu não me importo", alguns dirão. "Apenas me mantenham seguro." Nesse contexto, apelos como os de Rosenstein por cooperação das empresas de tecnologia — ou como os de Judd Gregg antes dele — encontram menos resistência.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Espionagem de Cidadãos}
+\label{}
+
+Historicamente, espionar cidadãos exigia um mandado (pois os cidadãos têm uma expectativa de privacidade), mas espionar estrangeiros não exigia. Uma série de decretos executivos e leis destinadas a combater o terrorismo permite que o governo inspecione os bits que estão a caminho do país ou saindo dele - talvez até uma ligação para uma companhia aérea, se for atendida por um centro de atendimento na Índia. Além disso, qualquer "vigilância direcionada a uma pessoa que se acredita estar localizada fora dos Estados Unidos" também é excluída da supervisão judicial, não importando se essa pessoa é um cidadão dos EUA ou não. Tais desenvolvimentos podem estimular a criptografia das comunicações eletrônicas e, portanto, no final, podem se mostrar contraproducentes. Isso, por sua vez, pode renovar os esforços para criminalizar a criptografia de e-mails e telefonemas nos Estados Unidos.
+
+A pergunta fundamental é esta: Com a criptografia sendo uma ferramenta tão comum para mensagens pessoais quanto para transações comerciais, os benefícios para a privacidade pessoal, a liberdade de expressão e a liberdade humana superarão os custos para a aplicação da lei e os serviços de inteligência nacional, cuja capacidade de interceptar e grampear será encerrada?
+
+Seja qual for o futuro da comunicação criptografada, a tecnologia de criptografia tem outro uso. Cópias perfeitas e comunicação instantânea transformaram a noção legal de "propriedade intelectual" em bilhões de bits de downloads de filmes e músicas por adolescentes. A criptografia é a ferramenta usada para bloquear filmes para que apenas pessoas específicas possam vê-los e bloquear músicas para que apenas pessoas específicas possam ouvi-las - para colocar uma camada resistente ao redor dessa parte da explosão digital. O significado alterado dos direitos autorais é a próxima parada em nossa jornada pela paisagem em expansão.
+
+\end{document}
