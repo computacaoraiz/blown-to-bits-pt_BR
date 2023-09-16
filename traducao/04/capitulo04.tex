@@ -454,3 +454,407 @@ Internet. Os inventores do sistema de telefone pela Internet, o Skype --- um peq
 engenheiros escandinavos e estonianos --- apenas precisaram adaptar os protocolos da Internet
 para seus propósitos. E eles não precisaram pedir permissão à IETF ou a qualquer outra
 autoridade para começar a usar o Skype ou incentivar outros a começarem a pagar por seu uso.
+
+\section{A Internet Não Tem Guardiões?}
+\label{gatekeepers:nao-tem-guardioes}
+
+Sempre foi um exagero dizer que a Internet não possui guardiões, mas isso é menos verdade 
+agora do que costumava ser. Como veremos em breve, em alguns países, os governos são os
+principais guardiões, e em outros, como nos Estados Unidos, as corporações privadas
+assumem papéis de guardiões. Vamos começar com as formas de guarda que existiram por
+muito tempo.
+
+\subsection{Nomes para Números: Qual é o Seu Endereço?}
+\label{gatekeepers:nomes-para-numeros}
+
+O primeiro fato da vida na Internet é que não adianta estar ``na'' Internet se ninguém
+puder te encontrar. Os pacotes que fluem pela Internet possuem endereços numéricos. Alguma
+entidade precisa traduzir os nomes simbólicos --- como cornell.edu e Skype.com --- em
+números e acompanhar quais pontos de conexão têm quais números.
+
+A Corporação da Internet para Atribuição de Nomes e Números (ICANN) é a entidade que
+determina quais endereços numéricos são atribuídos à Universidade de Cornell ou à nação da
+Austrália. Ela supervisiona a publicação de diretórios eletrônicos de tal forma que qualquer
+pessoa que envie um e-mail para o endereço president@cornell.edu ou recupere uma página da
+web de um endereço como http://anu.edu.au (a página inicial da Universidade Nacional
+Australiana) seja direcionada para o local correto na Internet. As tabelas de tradução, de
+letras para números, são mantidas em servidores do Sistema de Nomes de Domínio (DNS), que
+outros computadores consultam para procurar os endereços numéricos a serem inseridos no campo
+``destino'' dos pacotes IP antes de serem lançados na Internet. Se a Internet tem uma única
+vulnerabilidade, é o controle sobre os servidores DNS. A nação insular de Tuvalu obtém seu
+próprio domínio de alto nível na Internet, como .au para a Austrália? (Sim, e é muito valioso.
+É .tv, e a nação, que costumava ganhar dinheiro vendendo selos, agora obtém receita ao permitir
+que sites de vídeo como twitch.tv usem a extensão .tv.) Quem decide se a Coca-Cola tem direito
+a cocacola.com ou, nesse sentido, cocacola.porcaria? Não deve ser surpresa que tais questões de
+alto risco despertem grande interesse de governos e corporações multinacionais. Geralmente,
+essas questões não podem ser resolvidas simplesmente concordando anonimamente ou por meio de
+qualquer processo igualmente inclusivo.
+
+No entanto, essas disputas territoriais são resolvidas sem o uso de força e sem fraturar a rede.
+Na verdade, desde as primeiras máquinas conectadas à ARPANET em 1969, o número de dispositivos
+conectados cresceu para bilhões hoje em dia. Qualquer um deles pode, em princípio, se conectar
+a qualquer outro.\footnote{O design do protocolo de pacotes da Internet foi estabelecido antes
+da era da miniaturização em massa e em um momento em que a memória do computador era limitada e
+cara. Naquela época, ninguém imaginava a necessidade de conectar mais de 4 bilhões de
+computadores à Internet, então apenas 32 bits foram reservados para os campos de endereço. Mas
+agora relógios de pulso e refrigeradores têm seus próprios endereços IP, e o número total de
+computadores conectados é maior do que pode ser distinguido usando 32 bits. Foram desenvolvidas
+várias soluções alternativas, e um novo protocolo, o IPv6, que possui endereços de 128 bits,
+está sendo lentamente implementado.} Os problemas sérios de guarda da Internet estão em outro
+lugar.
+
+\section{Guardiões dos Links: Conectando-se}
+\label{gatekeepers:guardioes-links}
+
+A Internet não é muito útil se você não consegue se conectar.
+
+Se você dirigir para o oeste de Boston através do norte dos Estados Unidos, as opções nos
+balcões de delicatessen dos supermercados mudam quando você chega ao Iowa. De repente, eles
+apresentam saladas de gelatina em grande variedade, incorporando várias frutas picadas, camadas
+coloridas e coberturas cremosas. Às vezes, a gelatina é moldada ao redor de peixe ou carne. A
+moda persiste pelas Grandes Planícies e sobe pelas Montanhas Rochosas, mas desaparece nas
+encostas descendentes. Quando você chega ao Oceano Pacífico, a gelatina novamente é principalmente
+para crianças e pacientes hospitalares. O amor pelas criações de gelatina no coração rural é tão
+prevalente que esses pratos são comumente apresentados nas capas de revistas de alimentos
+disponíveis nos caixas dos supermercados costeiros e urbanos, mesmo que ninguém que compre lá
+sonharia em servir tal coisa. Entre as elites costeiras e urbanas, as saladas de gelatina são
+consideradas pouco sofisticadas.
+
+A predileção do Meio-Oeste por saladas de gelatina está desaparecendo agora, à medida que a
+cultura gastronômica, assim como o restante da cultura americana, está se tornando
+geograficamente homogeneizada. Em algumas áreas, as receitas de salada de gelatina da vovó são
+lembradas como chapéus de palha feitos à mão e vestidos de chita --- como artefatos de um
+passado rural fora do lugar em tempos mais avançados. Mas as saladas de gelatina não foram
+levadas para o Oeste em carroças cobertas; isso teria sido impossível, já que criá-las requer
+refrigeração. Elas são, em vez disso, um subproduto de uma revolução tecnológica do século XX:
+a eletrificação rural. As saladas de gelatina eram uma iguaria nas fazendas porque você não
+poderia fazê-las se sua fazenda não fosse eletrificada. As pessoas que serviam saladas de
+gelatina também tinham bombas de poço elétricas e luzes elétricas. Servir gelatina provava que
+você estava tecnologicamente avançado.
+
+A economia de difundir eletricidade e de difundir bits por meio de fios ou cabos é semelhante.
+É caro instalar cabos em longas distâncias e, se houver poucos clientes no final da linha, não
+é economicamente viável instalar o cabo. Também é caro puxar fios para muitas residências
+individuais se estiverem distantes umas das outras. Os lucros são muito maiores ao conectar uma
+cidade, porque assim que a linha é trazida até uma rua, cada unidade habitacional na rua se
+torna um cliente, e a distância da linha principal para os clientes tende a ser curta. De fato,
+as cidades foram eletrificadas primeiro, principalmente para a iluminação pública, que não exigia
+a instalação de fiação dentro de edifícios particulares. Todos os outros usos da eletricidade
+--- para iluminação interna, geladeiras, máquinas de lavar, lava-louças e rádios --- derivaram do
+uso para a iluminação pública. Até hoje, um passeio pela Beacon Street, perto do Fenway Park em
+Boston, leva você a uma estrutura que diz ``The Edison Electric Illuminating Company''.
+
+Não teria feito sentido difundir a eletricidade em nível nacional apenas para que as pessoas
+pudessem comer gelatina. Na verdade, não existia geladeira doméstica elétrica quando os primeiros
+postes de iluminação elétrica foram acesos. A eletricidade doméstica era o que Jonathan Zittrain
+chama de tecnologia geradora.\footnote{Jonathan Zittrain, \ingles{The Future of the Internet—and
+How to Stop It} (Yale University Press, 2008).} Uma vez que a infraestrutura foi instalada,
+pessoas criativas começaram a sonhar com usos para ela e desenvolveram tecnologias totalmente
+novas que não poderiam ter existido sem ela. No processo, alguns setores antigos morreram, com
+enormes custos para aqueles que lucraram com eles. Hoje em dia, ``caixa de gelo'' é, na melhor das
+hipóteses, uma expressão nostálgica para uma geladeira, mas há um século havia um enorme setor
+dedicado a cortar a superfície congelada dos lagos em blocos, transportá-los por longas distâncias
+e distribuí-los nos lares americanos. As tecnologias geradoras também são tecnologias destrutivas.
+
+A difusão da Internet seguiu em grande parte as mesmas etapas que a difusão da eletricidade já fez.
+A iluminação foi a aplicação matadora para a eletricidade; as saladas de gelatina foram os vídeos
+engraçados da rede elétrica. No entanto, a experiência dos Estados Unidos com a Internet tem sido
+muito diferente do que foi com a rede elétrica.
+
+Os Estados Unidos foram eletrificados rapidamente e de forma ubíqua, mas essa rápida expansão não
+teria ocorrido sem um incentivo do governo federal. Fazer a instalação elétrica em áreas remotas
+não era lucrativo, e teria sido ainda mais desvantajoso para um concorrente instalar um segundo
+cabo para atender aos mesmos clientes. Portanto, a eletricidade estava prontamente disponível nas
+cidades, mas extremamente cara em áreas remotas, quando estava disponível.
+
+Franklin Roosevelt pôde perceber a diferença no preço da eletricidade quando se retirou de Nova
+York e Washington, DC, para Warm Springs, Geórgia, onde buscava alívio e tratamentos de spa para
+sua paralisia. Foi lá que ele concebeu a Lei de Eletrificação Rural e a assinou em lei em 1936.
+Essa iniciativa estimulou não apenas a difusão da eletricidade, mas também a invenção de novas
+maneiras para os consumidores comuns a utilizarem.
+
+No início dos anos 1920, menos de 1\% das residências nos Estados Unidos tinham eletricidade. Seis
+anos após a assinatura da Lei de Eletrificação Rural, seguindo uma terrível recessão econômica,
+metade das residências nos Estados Unidos estavam eletrificadas. Em 1960, praticamente todo o país
+tinha eletricidade.
+
+Para fazer uma comparação sensata entre a difusão da Internet e a difusão da eletricidade,
+precisamos definir nossos termos. A eletricidade fornecida às residências foi padronizada: nos
+Estados Unidos, a eletricidade é corrente alternada, com frequência de 60 Hz e tensão de 120V.
+Esses padrões são análogos ao IP para a Internet. Eles garantem que os mesmos aparelhos possam
+ser conectados a tomadas em qualquer lugar do país.
+
+Mas há outro parâmetro importante: a quantidade de energia elétrica usada por um aparelho ou
+uma residência. A taxa na qual a eletricidade é usada é chamada de potência e é medida em
+watts ou quilowatts (para milhares de watts). A quantidade de energia usada é medida em
+quilowatt-hora; um quilowatt-hora (kWh) é a quantidade de energia consumida ao usá-la por uma
+hora a uma taxa de 1.000 watts. Os códigos elétricos foram padronizados de forma que os
+circuitos residenciais possam lidar com cerca de 2.000 watts; se você usar muito mais do que
+isso, um disjuntor será desarmado, e o fio pode derreter se não houver um fusível ou disjuntor.
+A fiação em uma casa antiga pode precisar ser atualizada quando um proprietário deseja usar
+mais equipamentos elétricos ou equipamentos elétricos mais potentes, como ar-condicionado ou
+uma banheira de hidromassagem. Por outro lado, os novos equipamentos tendem a usar menos
+energia do que os antigos, portanto, o consumo médio por residência aumentou apenas lentamente
+ao longo do tempo. As concessionárias de energia elétrica que realmente fornecem a energia
+podem ter que atualizar sua rede de distribuição para acompanhar a demanda, mas uma combinação
+de pressão do consumidor e normas federais geralmente tornam raro nos Estados Unidos ter
+``apagões'', quando uma cidade inteira ou bairro tem energia insuficiente. Nos Estados Unidos,
+a eletricidade é, em sua maioria, uma indústria regulamentada com sucesso.
+
+O análogo da potência para a Internet é a taxa de bits, e aqui a experiência da Internet e da
+rede elétrica se divergiram significativamente. O fornecimento de conectividade à Internet tem
+sido deixado quase inteiramente para o setor privado, com regulamentação governamental mínima
+e apoio governamental mínimo. Em quase nenhum lugar existe uma concorrência séria, então os
+consumidores não podem mudar para provedores melhores. O provedor monopolista de serviços de
+Internet pode oferecer uma escolha de velocidades, mas as velocidades mais altas provavelmente
+serão exorbitantemente caras. Em uma palavra, em vez de fornecer Internet de alta velocidade,
+a maioria dos provedores de serviços de Internet tenta nos convencer de que já a temos, e o
+governo está ajudando em seu engano em vez de pressioná-los a melhorar seus serviços.
+
+\subsection{Onde Estão os Gargalos e o Que Conta como ``Alta Velocidade''?}
+\label{gatekeepers:gargalos}
+
+A taxa na qual os bits completam sua transmissão --- por exemplo, de um servidor da web em
+algum lugar para o navegador em execução no seu computador doméstico ou do seu computador de
+escritório para a sala de bate-papo de vídeo na sede da sua empresa em Londres --- é a mais
+lenta das taxas de qualquer um dos elos ao longo do caminho. A taxa na qual os bits fluem
+através de um elo é afetada por alguns parâmetros físicos --- as propriedades elétricas ou
+eletromagnéticas do cobre ou vidro dos quais o elo é composto --- e o quanto o tráfego é
+pesado. Se a sua comunicação tiver o elo para si mesma, ela pode utilizar todos os bits por
+segundo dos quais o meio de comunicação é capaz, mas se tiver que compartilhar essa capacidade
+com um milhão de outras transmissões, a sua pode receber apenas um milionésimo.
+
+Pense novamente no seu computador doméstico recuperando uma página da web de um servidor
+pertencente a uma grande empresa. Seu pedido precisa chegar ao servidor corporativo, e os
+pacotes que compõem a página da web precisam retornar ao seu computador doméstico.
+Simplificando bastante, você pode pensar que os bits do seu pedido fazem três saltos. Eles
+precisam ir do seu computador até a parede externa da sua casa; depois da sua casa para a
+``rede de distribuição'', os cabos de longa distância que cruzam o país; e então através das
+centenas ou milhares de milhas da rede de distribuição. A conexão da sua casa para a rede de
+distribuição é comumente referida como a ``última milha''. A mesma hierarquia é, em princípio,
+atravessada no outro extremo, exceto que a Amazon e o Google estão conectados diretamente à
+rede de distribuição devido às suas enormes necessidades de capacidade. Se você estivesse se
+comunicando com outra pessoa sentada em um computador doméstico, os bits teriam que percorrer
+a ``última milha'' até a casa dessa pessoa.
+
+Dentro de uma casa, a maioria das pessoas usa Wi-Fi, uma espécie de comunicação por rádio de
+curta distância. As tecnologias Wi-Fi mais recentes podem atingir velocidades de gigabit, mas
+na prática as conexões provavelmente serão mais lentas devido a interferências ou obstruções.
+Usuários avançados ainda podem ter suas casas cabeadas para que possam conectar seus
+computadores usando cabos Ethernet em vez de conexões sem fio.
+
+Mas uma conexão sem fio lenta pode ser suficientemente rápida se a ``última milha'' já for
+lenta de qualquer maneira. E nos Estados Unidos, quase certamente é lenta. Em termos globais,
+o que é chamado nos Estados Unidos de ``Internet de alta velocidade'' simplesmente não o é.
+
+A rede de distribuição da Internet é composto por cabos de fibra ótica. A fibra é incrível; o
+próprio vidro possui uma capacidade de transporte de informações praticamente ilimitada. Sua
+capacidade real não é limitada pelo vidro, mas sim pela eletrônica que conecta a rede nos
+pontos de comutação. A eletrônica está constantemente sendo aprimorada; uma vez instalada, a
+fibra nunca é substituída (a menos que seja danificada --- por exemplo, porque um barco de
+pesca a pega).\footnote{For a full account of the story of fiber, see Susan Crawford, Fiber:
+\ingles{The Coming Tech Revolution --- and Why America Might Miss It}, Yale University Press,
+2018.}
+
+Em algumas partes do mundo, a última milha também é composta por fibra, de modo que essas
+incríveis capacidades de informações chegam diretamente às portas de residências e empresas.
+Em Cingapura e na Suécia, praticamente todos têm acesso a velocidades de Internet na casa dos
+bilhões de bits por segundo. Em contraste, talvez 15\% dos americanos tenham conexões de fibra
+em suas residências, e essa porcentagem não está aumentando. A maioria de nós está conectada
+por fios telefônicos legados, usando o chamado serviço DSL, ou por cabo coaxial que foi
+instalado para trazer a TV a cabo para nossas casas. Até mesmo o serviço DSL está sendo
+gradualmente descontinuado em alguns lugares por ser pouco lucrativo. E as provedoras de cabo
+e telecomunicações efetivamente dividiram o mapa entre elas; em apenas poucos lugares um
+consumidor pode escolher entre o serviço de cabo e DSL, muito menos entre múltiplos serviços
+de cabo.
+
+A própria Internet não se conecta à sua casa, escritório ou celular. As pessoas comuns
+conectam seus dispositivos não à Internet, mas a um provedor de serviços de Internet (ISP).
+Como os pacotes da Internet podem viajar por uma variedade de mídias físicas, em princípio,
+não há limite para o número de ISPs que podem transportar pacotes para dentro e para fora de
+sua casa, mediante pagamento. A realidade é muito diferente. Nos Estados Unidos, é provável
+que seu ISP residencial seja a AT\&T, Time Warner, Comcast/Xfinity, Verizon ou Charter. A
+razão pela qual há tão poucos é que cada uma delas é uma empresa de telecomunicações ou de
+televisão a cabo, e elas estão usando a fiação ou cabo de fibra óptica que já trouxeram para
+sua casa para fornecer serviço de telefone ou televisão. O acesso à Internet sem fio também é
+possível --- por isso não se entende a conexão Wi-Fi entre seu computador e um roteador, que
+está então conectado ao seu ISP, mas sim uma conexão sem fio diretamente com o ISP. A conexão
+via satélite é possível em áreas rurais onde nenhum tipo de conexão com fio foi instalado,
+mas a Internet via satélite é lenta e cara. Os celulares se conectam à Internet por meio da
+rede de telefonia celular, mas a rede celular não é uma opção viável para uso residencial. E
+os chamados sinais de rádio 5G, que estão sendo anunciados como o futuro da conectividade à
+Internet, viajam apenas curtas distâncias. Portanto, uma infraestrutura 5G é realista apenas
+em áreas densamente povoadas, onde é possível instalar muitos hubs de forma econômica.
+
+Os americanos são bombardeados com anúncios de ``Internet de alta velocidade'', mas, na
+realidade, até mesmo a definição do governo de ``alta velocidade'' é enganosa. A última vez
+que foi atualizada foi em 2015, quando --- contra as objeções dos provedores de serviços de
+Internet --- a FCC aumentou o padrão de 4 Mbps para 25 Mbps. Isso equivale a um quadragésimo
+da velocidade de gigabit que agora é padrão no Japão e na Suécia, e que até mesmo a China
+está difundindo em áreas rurais. E o padrão dos EUA de 25 Mbps se aplica apenas às velocidades
+de download, como se a Internet fosse basicamente um meio de transmissão para os consumidores
+receberem filmes da Netflix. Muitas aplicações, desde videochamadas até a transferência de
+imagens médicas, exigem altas velocidades em ambas as direções. Empresas de todos os tipos
+dependem da conectividade à Internet tanto para uploads quanto para downloads; eles usam a
+Internet para obter informações sobre seus produtos e serviços, e até mesmo os próprios
+produtos e serviços, para seus clientes. Portanto, é muito difícil iniciar um negócio em uma
+área onde a conectividade é fraca ou limitada a downloads rápidos e uploads lentos. E, no
+entanto, nos Estados Unidos, a Internet foi otimizada como substituta da televisão --- como
+uma forma para poucos fornecerem conteúdo para muitos.
+
+Uma segunda forma de semântica criativa distorce as estatísticas governamentais sobre a
+disponibilidade de ``Internet de alta velocidade'' nos Estados Unidos. O governo considera que
+um setor censitário --- uma das cerca de 75.000 áreas geográficas em que os Estados Unidos
+são divididos para fins de censo --- possui Internet de alta velocidade se mesmo uma única
+residência tiver acesso a ela, independentemente do preço e independentemente de qualquer
+residência ter efetivamente assinado uma conexão. Assim, as estimativas do governo sobre a
+difusão da Internet de alta velocidade são amplamente infladas.
+
+E o preço importa. Em grande parte do mundo, velocidades de gigabit estão disponíveis por
+menos de US\$ 50 por mês. Na área de Boston, onde estamos escrevendo, custa US\$ 70 por mês
+nas áreas restritas onde está disponível --- e requer um contrato de 24 meses.
+
+O americano típico tem apenas uma ou duas opções realistas de ISP. Mais de 30\% das
+residências nos Estados Unidos não têm provedores de serviço de Internet com 25 Mbps ou mais,
+e menos de um quarto das residências nos Estados Unidos têm mais de uma escolha.\footnote{Jon
+Brodkin, ``US Broadband: Still No ISP Choice for Many, Especially at Higher Speeds,''
+\ingles{Ars Technica}, August 10, 2016,
+\url{https://arstechnica.com/information-technology/2016/08/us-broadband-still-no-isp-choice-for-many-especially-at-higher-speeds/}.}
+
+Em grande parte, a disseminação da conectividade à Internet foi deixada para o setor privado
+nos Estados Unidos. Na verdade, regras em 26 estados dificultam ou proíbem que governos locais
+ofereçam conectividade à Internet, forçando indivíduos para os quais nenhum serviço doméstico
+acessível está disponível a se conectarem em bibliotecas públicas ou restaurantes de fast food.
+\footnote{Kendra Chamberlain, ``Municipal Broadband Is Roadblocked or Outlawed in 25 States,''
+\ingles{Broadband Now}, May 13, 2020,
+\url{https://broadbandnow.com/report/municipal-broadband-roadblocks/}.} O código de
+Montana\footnote{``Government Competition with Private Internet Services Providers Prohibited
+--- Exceptions,'' Montana Code Annotated 2019,
+\url{https://leg.mt.gov/bills/mca/title_0020/chapter_0170/part_0060/section_0030/0020-0170-0060-0030.html}.}
+é típico: ``Exceto conforme previsto na subseção (2)(a) ou (2)(b), uma agência ou subdivisão
+política do estado não pode, direta ou indiretamente, ser um provedor de serviços de Internet.''
+Portanto, a menos que todos os ISPs privados se retirem, as pessoas de Browning, Montana, estão
+presas às ofertas privadas de baixa qualidade e caras. Nenhum tipo de empreendedorismo municipal
+pode ajudar sua população. Os lobistas das empresas privadas de telecomunicações chegaram
+primeiro à legislatura estadual.
+
+Agora, é claro, existem razões para impedir que os governos concorram com empresas privadas.
+Os argumentos são familiares. A competição reduz os preços e melhora a qualidade. O dinheiro
+dos contribuintes não deve ser usado para prejudicar os fornecedores privados. Os governos
+não devem interferir nos mercados livres.
+
+Mas simplesmente não há pessoas suficientes do outro lado para pagar pela conexão de longa
+distância. Isso não é diferente da situação da entrega gratuita de correspondência rural
+--- que se tornou lei em 1893 e chegou a Billings em 1902 --- ou da rede elétrica nas décadas
+de 1930 e 1940. Conectar o país requer que as comunicações eletrônicas sejam vistas como
+eletricidade ou correio postal: elas teriam que estar disponíveis para todos a um preço
+acessível. Esse princípio, de fato, não é geralmente aceito. Em vez disso, a metáfora
+operacional para a Internet é a televisão ou um cinema de várias telas. Os provedores de
+serviços de Internet dominantes veem a Internet como uma forma de conectar provedores de
+conteúdo ativo a consumidores passivos. É por isso que os ISPs oferecem pacotes que incentivam
+o download e limitam o upload.
+
+Na ausência do tipo de incentivo do governo que resultou em serviços de Internet muito
+melhores na Coreia do Sul, Suíça e até na maior parte da Finlândia do que nos Estados Unidos,
+por que a concorrência não reduziu os preços e aumentou a qualidade?
+
+Alguns argumentariam que a ganância corporativa, a colusão e a corrupção são os culpados, e
+embora essa perspectiva possa ter alguma validade em alguns casos, a realidade é que as redes
+de comunicação crescem e se consolidam quase organicamente por motivos de eficiência. Paul
+Baran próprio antecipou que esse fenômeno afetaria as redes de computadores vários anos antes
+de projetar uma das primeiras redes. Em seu depoimento perante o Congresso sobre privacidade
+eletrônica em 1966, ele disse,\footnote{Paul Baran, ``Full Text of `The Computer and Invasion
+of Privacy','' July 26, 1966,
+\url{https://archive.org/details/U.S.House1966TheComputerAndInvasionOfPrivacy/mode/2up}.}
+
+\begin{quote}
+Nossas primeiras ferrovias na década de 1830 eram rotas curtas que conectavam centros
+populacionais locais. Ninguém se sentou e elaborou um plano mestre para uma rede de trilhos
+de ferro. Com o tempo, um número crescente desses sistemas locais separados foi construído.
+Uma rede gradualmente se formou à medida que a pressão econômica levou à construção de novos
+elos para preencher as lacunas entre as rotas individuais.
+
+Não começamos a construir uma rede telegráfica nacional no final dos anos 1840; apenas elos
+telegráficos independentes. No entanto, não demorou muito para termos uma rede nacional
+integrada. Até o nome, Western Union, evoca o padrão de elos independentes unidos para
+fornecer um sistema mais útil.
+
+Não começamos a construir um sistema telefônico nacional nos primeiros dias do telefone na
+década de 1890. No entanto, hoje temos uma rede telefônica altamente integrada.
+
+Tais padrões de crescimento não são acidentes. Comunicações e transporte são serviços que
+historicamente tendem a formar ``monopólios naturais''. O motivo é bem compreendido. É mais
+barato compartilhar o uso de uma grande entidade do que construir suas próprias instalações.
+Portanto, se você observasse a Terra, digamos, a partir do ponto de vista distante da lua,
+pareceria que o crescimento dessas redes integradas a partir de peças individuais é quase
+biológico.
+\end{quote}
+
+Portanto, não é muito complicado. É mais valioso fazer parte de uma rede grande do que de
+uma pequena, e quanto maior a rede, mais valioso é fazer parte dela. Na ausência de
+resistência de alguma estrutura social com autoridade para resistir a fusões, consolidações,
+aquisições e decisões estratégicas corporativas para controlar o tráfego de rede, as redes
+de comunicação crescerão e se tornarão cada vez mais escassas com o tempo. Essa monopolização
+não é necessariamente contrária ao interesse público --- desde que o interesse público
+participe das decisões sobre distribuição e preços. Hoje em dia, isso raramente acontece.
+
+\subsection{O carteiro pode decidir qual correspondência entregar?}
+\label{gatekeepers:carteiro}
+
+A história da Telus e seus trabalhadores em greve com a qual este capítulo começou demonstra
+que a dicotomia entre links e conteúdo não é útil quando o guardião de links assume o papel
+de guardião de conteúdo. A noção de que os provedores de serviços de Internet não devem
+decidir quais bits entregar é conhecida como neutralidade da rede. Em princípio, pode
+parecer simples e incontestável; afinal, não queremos que a companhia telefônica decida
+quais conversas ela permitirá acontecer em suas linhas de voz. É verdade que, quando os
+clientes não pagam suas contas, o serviço telefônico deles pode ser cortado, mas mesmo isso
+é raro porque a sociedade geralmente reconhece --- ou costumava reconhecer --- que o serviço
+telefônico é importante para a vida cotidiana. Mas a Internet não é exatamente como a rede
+telefônica.
+
+Por volta do mesmo período em que a Telus estava derrubando sites pró-sindicato no Canadá, um
+pequeno ISP da Carolina do Norte chamado Madison River Communications fechou a Vonage, que
+oferecia serviço de Voz sobre IP (VoIP). O uso da Internet para fornecer conversas de voz ao
+vivo teria parecido loucura no início da Internet, porque a rede era muito lenta e os
+computadores conectados a ela não conseguiam acompanhar o fluxo de pacotes para reuni-los em
+uma fala compreensível. Mas os tempos mudam. À medida que as velocidades de conexão melhoraram
+e novos protocolos, baseados em IP, foram otimizados para comunicações por voz, uma diferença
+sistemática entre serviços telefônicos e de Internet interveio. As empresas de telefonia
+cobravam a mais pelo serviço de longa distância; os provedores de serviços de Internet não se
+importavam com a origem ou destino dos pacotes. Eles podiam cobrar mais por taxas de dados mais
+altas, mas não por destinos mais distantes. Inevitavelmente, o software VoIP --- o Skype foi o
+primeiro sucesso comercial nesse espaço --- foi desenvolvido para substituir a telefonia por
+comunicações pela Internet e tornar as ``chamadas'' de longa distância virtualmente gratuitas
+para qualquer pessoa com uma conexão à Internet. A Vonage estava usando o serviço de dados da
+Madison River para minar o serviço telefônico da Madison River.
+
+Quando a Vonage foi bloqueada, a empresa reclamou com a Comissão Federal de Comunicações, que
+tem jurisdição sobre serviços telefônicos. O caso foi resolvido quando a Madison River
+concordou em pagar uma multa e não bloquear o VoIP por três anos, mas essa resolução deixou
+mais perguntas do que respostas em seu rastro. E se a Madison River fosse uma empresa de cabo
+oferecendo serviços de Internet em vez de uma empresa telefônica? Por outro lado, e se a Madison
+River fosse grande o suficiente para lutar contra a FCC nos tribunais? Não estava de forma
+alguma claro se a FCC tinha a autoridade congressual para apoiar suas táticas autoritárias sobre
+a maneira como até mesmo os ISPs de telefonia estavam escolhendo quais bits entregar.
+\footnote{Scott Bradner, ``The Internet: Unblocking Pipes,'' Network World, March 14, 2005,
+\url{https://www.networkworld.com/article/2319666/the-internet--unblocking-pipes.html}.}
+
+A situação chegou ao auge em 2008, quando a FCC ordenou que o ISP Comcast parasse de
+``estrangular'' --- ou seja, de reduzir a velocidade --- do BitTorrent, um serviço de
+compartilhamento de arquivos peer-to-peer amplamente usado para entregar filmes para o lar.
+A Comcast estava entregando filmes com lucro sobre o mesmo cabo que estava usando para
+fornecer serviços de Internet, então o BitTorrent estava prejudicando seus negócios de entrega
+de vídeo. A Comcast processou com sucesso a FCC, estabelecendo que a FCC realmente não tinha
+autoridade para regular seu negócio de serviços de Internet. Essa decisão deu início a um
+debate sobre a neutralidade da rede que se arrasta há mais de uma década.
+
+Os detalhes são complexos. Em poucas palavras, vozes pró-neutralidade argumentaram a favor
+da escolha e liberdade do consumidor; oponentes argumentaram que as forças de mercado
+resolveriam quaisquer tensões, um argumento recebido com ceticismo por aqueles que observam
+a escassa concorrência no espaço dos ISP. Nos Estados Unidos, as regras de neutralidade da
+rede foram instituídas durante a administração Obama e revogadas durante a administração
+Trump. Muitas outras nações adotaram a neutralidade da rede em princípio, mas algumas delas
+permitem a cobrança com base no uso, o que pode ter o efeito de tornar certos aplicativos,
+como assistir filmes, inaceitavelmente caros, alcançando assim o mesmo resultado ---
+priorizando outros meios de entrega de filmes para casa --- que a Comcast havia alcançado ao
+limitar os serviços peer-to-peer em 2008.
