@@ -51,11 +51,11 @@ finalizada, a tradução dessa parte aparece como finalizada).
   - [x] **Sobre os autores**
   - [x] **Prefácio**
 - Main matter
-  - [ ] **Capítulo 1: Explosão Digital**
+  - [x] **Capítulo 1: Explosão Digital**
     - [x] **Introdução**
     - [x] **A explosão de bits**
-    - [ ] **Os koans de bits**
-    - [ ] O bem e o mal
+    - [x] **Os koans de bits**
+    - [x] **O bem e o mal**
   - [ ] Capítulo 2: Despido à Luz do Sol
   - [ ] Capítulo 3: Quem é o Dono de Sua Privacidade?
   - [ ] Capítulo 4: Gatekeepers
