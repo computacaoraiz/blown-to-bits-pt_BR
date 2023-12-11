@@ -84,23 +84,23 @@ Para atender às necessidades do comércio eletrônico, o software de criptograf
 
 A criptografia, ou ``escrita secreta'', existe há quase tanto tempo quanto a própria escrita. Cifras foram encontradas em hieróglifos egípcios datados de cerca de 2000 a.C. Uma cifra é uma ferramenta para transformar uma mensagem em uma forma obscurecida, juntamente com uma maneira de desfazer a transformação para recuperar a mensagem original. Suetônio, o biógrafo dos Césares, descreve o uso de uma cifra por Júlio César em suas cartas ao orador Cícero, com quem ele estava planejando e conspirando nos últimos dias da República Romana:
 
-%
-``Se ele [César] tivesse algo confidencial para dizer, ele escrevia em código, ou seja, alterando a ordem das letras do alfabeto, de forma que nenhuma palavra pudesse ser identificada. Se alguém quiser decifrar essas mensagens e entender seu significado, ele deve substituir a quarta letra do alfabeto, ou seja, o D, pelo A, e assim por diante.''\footnote{To be precise, Caesar had only 22 shifts available because the Romans did not use the letter J, U, or W.}
-%
+\begin{quote}
+    ``Se ele [César] tivesse algo confidencial para dizer, ele escrevia em código, ou seja, alterando a ordem das letras do alfabeto, de forma que nenhuma palavra pudesse ser identificada. Se alguém quiser decifrar essas mensagens e entender seu significado, ele deve substituir a quarta letra do alfabeto, ou seja, o D, pelo A, e assim por diante.''\footnote{To be precise, Caesar had only 22 shifts available because the Romans did not use the letter J, U, or W.}
+\end{quote}
 
 Em outras palavras, César usava uma tradução letra por letra para criptografar suas mensagens:
 
-%
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-DEFGHIJKLMNOPQRSTUVWXYZABC
-%
+\begin{quote}
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    DEFGHIJKLMNOPQRSTUVWXYZABC
+\end{quote}
 
 Para criptografar uma mensagem com o método de César, substitua cada letra da linha superior pela letra correspondente na linha inferior. Por exemplo, a abertura dos ``Comentários de César'', ``Gallia est omnis divisa in partes tres'', seria criptografada da seguinte forma:
 
-%
-Texto original: gallia est omnis divisa in partes tres
-Texto criptografado: jdoold hvw rpqlv glylvd lq sduwhv wuhv
-%
+\begin{quote}
+    Texto original: gallia est omnis divisa in partes tres
+    Texto criptografado: jdoold hvw rpqlv glylvd lq sduwhv wuhv
+\end{quote}
 
 A mensagem original é chamada de texto claro, e a mensagem codificada é chamada de texto criptografado. As mensagens são descriptografadas fazendo as substituições inversas.
 
@@ -109,14 +109,17 @@ Esse método é chamado de cifra de César ou cifra de deslocamento de César. A
 As cifras de César são muito simples, e um inimigo que soubesse que César estava simplesmente deslocando o texto claro poderia facilmente tentar todos os 25 deslocamentos possíveis do alfabeto para descriptografar a mensagem. No entanto, o método de César é representativo de uma classe maior de cifras, chamadas cifras de substituição, em que um símbolo é substituído por outro de acordo com uma regra uniforme (a mesma letra é sempre traduzida da mesma maneira).
 
 Existem muitas mais cifras de substituição do que apenas deslocamentos. Por exemplo, poderíamos embaralhar as letras de acordo com a regra:
-%
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-XAPZRDWIBMQEOFTYCGSHULJVKN
-%
+
+\begin{quote}
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    XAPZRDWIBMQEOFTYCGSHULJVKN
+\end{quote}
+
 Assim, A se torna X, B se torna A, C se torna P e assim por diante. Existe uma substituição semelhante para todas as maneiras de reorganizar as letras do alfabeto. O número de diferentes reorganizações é
-%
-26 × 25 × 24 × … × 3 × 2
-%
+\begin{quote}
+    26 × 25 × 24 × … × 3 × 2
+\end{quote}
+
 o que equivale a cerca de 4 × 1026 métodos diferentes --- 10.000 vezes o número de estrelas no universo! Seria impossível testá-los todos. As cifras de substituição geral devem ser seguras --- ou assim parece.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -267,14 +270,17 @@ A última lição da história pode parecer contra-intuitiva. É que um método 
 
 O linguista flamengo Auguste Kerckhoffs articulou esse princípio em um ensaio de criptografia militar de 1883.\footnote{Aug (Auguste) Kerckhoffs, La cryptographie militaire ou Des chiffres usités en temps de guerre avec un nouveau procédé de déchiffrement applicable aux systèmes à double clef, Extrait du Journal des sciences militaires (Librairie militaire de LBaudoin et Cie, 1883), \url{https://journals.openedition.org/bibnum/555}.} Como ele explicou:
 
-%
-``O sistema não deve depender do segredo e pode cair nas mãos do inimigo sem causar problemas... Aqui, eu me refiro ao sistema, não à chave em si, mas à parte material do sistema: tabelas, dicionários ou qualquer outro aparato mecânico necessário para aplicá-lo. Na verdade, não é necessário criar fantasmas imaginários ou suspeitar da integridade de funcionários ou subordinados para entender que, se um sistema que exige sigilo cair nas mãos de muitas pessoas, ele poderia ser comprometido em cada engajamento em que qualquer uma delas participe.''
-%
+\begin{quote}
+    ``O sistema não deve depender do segredo e pode cair nas mãos do inimigo sem causar problemas... Aqui, eu me refiro ao sistema, não à chave em si, mas à parte material do sistema: tabelas, dicionários ou qualquer outro aparato mecânico necessário para aplicá-lo. Na verdade, não é necessário criar fantasmas imaginários ou suspeitar da integridade de funcionários ou subordinados para entender que, se um sistema que exige sigilo cair nas mãos de muitas pessoas, ele poderia ser comprometido em cada engajamento em que qualquer uma delas participe.''
+\end{quote}
 
 Em outras palavras, se um método criptográfico é amplamente utilizado, é irrealista esperar que ele possa permanecer em segredo por muito tempo. Portanto, ele deve ser projetado de forma a permanecer seguro, mesmo que tudo, exceto uma pequena quantidade de informação (a chave), seja exposto.
 
 Shannon reafirmou o Princípio de Kerckhoffs em seu artigo sobre sistemas de comunicação secreta: ``Vamos assumir que o inimigo conhece o sistema que está sendo usado''.\footnote{Shannon, “Communication Theory of Secrecy Systems,” 662.} Ele prosseguiu escrevendo:
-``Essa suposição é realmente a que é normalmente usada em estudos criptográficos. É pessimista e, portanto, segura, mas a longo prazo realista, pois se deve esperar que seu sistema seja descoberto eventualmente.''
+\begin{quote}
+    ``Essa suposição é realmente a que é normalmente usada em estudos criptográficos. É pessimista e, portanto, segura, mas a longo prazo realista, pois se deve esperar que seu sistema seja descoberto eventualmente.''
+\end{quote}
+
 
 O Princípio de Kerckhoffs é frequentemente violado na prática moderna de segurança na Internet. Empresas iniciantes na Internet rotineiramente fazem anúncios ousados sobre novos métodos de criptografia proprietários inovadores, que se recusam a submeter à análise pública, explicando que o método deve ser mantido em segredo para proteger sua segurança. Criptógrafos geralmente encaram tais alegações de ``segurança através da obscuridade'' com extrema ceticismo.
 
@@ -296,10 +302,9 @@ Se Alice e Bob acordassem a chave quando se encontrassem, como Bob poderia mante
 E se Alice e Bob nunca se encontrassem, como poderiam concordar em uma chave sem já ter um método seguro para transmitir a chave? Isso parecia uma limitação fundamental: a comunicação segura era prática apenas para pessoas que poderiam combinar de se encontrar antecipadamente ou que tinham acesso a um método prévio de comunicação segura (como mensageiros militares) para levar a chave entre eles. Se as comunicações na Internet tivessem que seguir essa suposição, o comércio eletrônico nunca teria decolado. Pacotes de bits percorrendo a rede estão completamente desprotegidos contra espionagem.
 
 E então, na década de 1970, tudo mudou. Whitfield Diffie era um matemático de 32 anos que tinha sido obcecado por criptografia desde seus anos como estudante de graduação no MIT. Martin Hellman, de 31 anos, era um graduado da Bronx High School of Science e professor assistente em Stanford. Diffie havia percorrido o país em busca de colaboradores na matemática da comunicação secreta. Esta não era uma área fácil de entrar, pois a maior parte do trabalho sério nesta área estava sendo feito atrás das portas firmemente trancadas da Agência de Segurança Nacional. Ralph Merkle, um estudante de pós-graduação em ciência da computação de 24 anos, estava explorando uma nova abordagem para comunicação segura. Na descoberta mais importante de toda a história da criptografia, Diffie e Hellman encontraram uma realização prática das ideias de Merkle, que eles apresentaram em um artigo intitulado ``Novas Direções em Criptografia''.\footnote{W. Diffie and M. Hellman, “New Directions in Cryptography,” IEEE Transactions on Information Theory 22, no. 6 (1976): 644–654, \url{https://doi.org/10.1109/TIT.1976.1055638}.} O artigo descrevia o seguinte: 
-
-%
-Uma forma de Alice e Bob, sem qualquer acordo prévio, concordarem em uma chave secreta, conhecida apenas por eles dois, usando mensagens entre eles que não são secretas de forma alguma.
-%
+\begin{quote}
+    Uma forma de Alice e Bob, sem qualquer acordo prévio, concordarem em uma chave secreta, conhecida apenas por eles dois, usando mensagens entre eles que não são secretas de forma alguma.
+\end{quote}
 
 %%%%%%%%%%%%%%%%%%%Quadro a esquerda%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -336,12 +341,14 @@ A invenção crucial foi o conceito de uma computação unidirecional - uma comp
 O protocolo de acordo de chave parte de uma base de conhecimento público: como fazer a computação x × y e também o valor de um número grande específico, g. Todas essas informações estão disponíveis para o mundo inteiro. Sabendo disso, aqui está como Alice e Bob procedem:
 
 Alice e Bob escolhem cada um um número aleatório. Chamaremos o número de Alice de a e o número de Bob de b. Chamaremos a e b de chaves secretas de Alice e Bob, respectivamente. Alice e Bob mantêm suas chaves secretas em segredo. Ninguém, exceto Alice, conhece o valor de a, e ninguém, exceto Bob, conhece o valor de b.
+\begin{quote}
+    1. Alice calcula g × a, e Bob calcula g × b (não é difícil de fazer). Os resultados são chamados de suas chaves públicas A e B, respectivamente.
 
-Alice calcula g × a, e Bob calcula g × b (não é difícil de fazer). Os resultados são chamados de suas chaves públicas A e B, respectivamente.
+    2. Alice envia para Bob o valor de A, e Bob envia para Alice o valor de B. Não importa se Eve intercepta essas comunicações; A e B não são números secretos.
 
-Alice envia para Bob o valor de A, e Bob envia para Alice o valor de B. Não importa se Eve intercepta essas comunicações; A e B não são números secretos.
+    3. Quando ela recebe a chave pública B de Bob, Alice calcula B × a, usando sua chave secreta a, bem como a chave pública de Bob B. Da mesma forma, quando Bob recebe A de Alice, ele calcula A × b.
+\end{quote}
 
-Quando ela recebe a chave pública B de Bob, Alice calcula B × a, usando sua chave secreta a, bem como a chave pública de Bob B. Da mesma forma, quando Bob recebe A de Alice, ele calcula A × b.
 
 Embora Alice e Bob tenham feito cálculos diferentes, eles acabaram com o mesmo valor. Bob calcula A × b - ou seja, (g × a) × b (consulte a etapa 2 - A é g × a). Alice calcula B × a - ou seja, (g × b) × a. Por causa da terceira propriedade da computação unidirecional, esse número é novamente (g × a) × b - o mesmo valor, obtido de uma maneira diferente!
 
@@ -453,16 +460,19 @@ Em 1994, a administração Clinton apresentou um plano para um ``Padrão de Crip
 As subsequentes negociações frequentemente acaloradas, às vezes referidas como ``guerras da criptografia'', ocorreram ao longo dos anos 1990. A aplicação da lei e a segurança nacional argumentavam a necessidade de controles de criptografia. Do outro lado do debate estavam as empresas de tecnologia, que não queriam regulamentação governamental, e grupos de liberdades civis, que alertavam para o potencial de aumento da vigilância das comunicações. Em essência, os formuladores de políticas não conseguiam compreender a transformação de uma importante tecnologia militar em uma ferramenta pessoal cotidiana.
 
 Conhecemos Phil Zimmermann no início deste capítulo, e sua carreira agora se torna uma parte central da história. Zimmermann era um programador e libertário que tinha interesse em criptografia desde a juventude. Ele havia lido uma coluna da Scientific American sobre criptografia RSA em 1977, mas não tinha acesso aos tipos de computadores necessários para implementar aritmética em números enormes, como os algoritmos RSA exigiam. Mas os computadores se tornariam poderosos o suficiente se você esperasse. À medida que a década de 1980 avançava, tornou-se possível implementar o RSA em computadores domésticos. Zimmermann começou a produzir software de criptografia para as pessoas, para combater a ameaça de aumento da vigilância governamental. Como ele mais tarde testemunhou perante o Congresso:
+\begin{quote}
+    O poder dos computadores havia mudado o equilíbrio em direção à facilidade de vigilância. No passado, se o governo quisesse violar a privacidade dos cidadãos comuns, ele tinha que despender uma certa quantidade de esforço para interceptar e abrir o correio em papel e lê-lo, ou ouvir e possivelmente transcrever conversas telefônicas faladas. Isso é análogo a pescar com um anzol e uma linha, um peixe de cada vez. Felizmente para a liberdade e a democracia, esse tipo de monitoramento intensivo de mão de obra não é prático em grande escala. Hoje, o correio eletrônico está gradualmente substituindo o correio em papel convencional e em breve será a norma para todos, não a novidade que é hoje. Ao contrário do correio em papel, as mensagens de e-mail são simplesmente muito fáceis de interceptar e analisar em busca de palavras-chave interessantes. Isso pode ser feito facilmente, rotineiramente, automaticamente e de maneira indetectável em grande escala. Isso é análogo à pesca com rede de arrasto --- fazendo uma diferença orwelliana quantitativa e qualitativa para a saúde da democracia.\footnote{“Testimony of Philip Zimmermann to Subcommittee for Economic Policy, Trade, and the Environment US House of Representatives 12 Oct 1993,” Federation of American Scientists, October 12, 1993, \url{https://fas.org/irp/congress/1993_hr/931012_zimmerman.htm}.}
+\end{quote}
 
-O poder dos computadores havia mudado o equilíbrio em direção à facilidade de vigilância. No passado, se o governo quisesse violar a privacidade dos cidadãos comuns, ele tinha que despender uma certa quantidade de esforço para interceptar e abrir o correio em papel e lê-lo, ou ouvir e possivelmente transcrever conversas telefônicas faladas. Isso é análogo a pescar com um anzol e uma linha, um peixe de cada vez. Felizmente para a liberdade e a democracia, esse tipo de monitoramento intensivo de mão de obra não é prático em grande escala. Hoje, o correio eletrônico está gradualmente substituindo o correio em papel convencional e em breve será a norma para todos, não a novidade que é hoje. Ao contrário do correio em papel, as mensagens de e-mail são simplesmente muito fáceis de interceptar e analisar em busca de palavras-chave interessantes. Isso pode ser feito facilmente, rotineiramente, automaticamente e de maneira indetectável em grande escala. Isso é análogo à pesca com rede de arrasto --- fazendo uma diferença orwelliana quantitativa e qualitativa para a saúde da democracia.\footnote{“Testimony of Philip Zimmermann to Subcommittee for Economic Policy, Trade, and the Environment US House of Representatives 12 Oct 1993,” Federation of American Scientists, October 12, 1993, \url{https://fas.org/irp/congress/1993_hr/931012_zimmerman.htm}.}
 
 A criptografia foi a resposta. Se os governos tivessem poderes ilimitados de vigilância sobre as comunicações eletrônicas, as pessoas em todo lugar precisavam de criptografia fácil de usar, barata e inquebrável para que pudessem se comunicar sem que os governos fossem capazes de entendê-las.
 
 Zimmermann enfrentou obstáculos que teriam desanimado almas menos fervorosas. O RSA era uma invenção patenteada. O MIT havia concedido uma licença exclusiva para a RSA Data Security Company, que produzia software de criptografia comercial para empresas, e a RSA Data Security não tinha interesse em conceder a Zimmermann a licença que ele precisaria para distribuir seu código RSA livremente, como ele desejava fazer.
 
 E havia a política governamental, que era, é claro, exatamente o problema para o qual Zimmermann sentia que seu software de criptografia era a solução. Em 24 de janeiro de 1991, o senador Joseph Biden, co-patrocinador da legislação antiterrorista Senate Bill 266\footnote{Joseph R. Biden, “S.266 - Comprehensive Counter-Terrorism Act of 1991”, \url{https://www.congress.gov/bill/102nd-congress/senate-bill/266}.}, inseriu uma nova linguagem no projeto de lei:
-
-``É o entendimento do Congresso que os provedores de serviços de comunicações eletrônicas e os fabricantes de equipamentos de serviços de comunicações eletrônicas devem garantir que os sistemas de comunicações permitam que o governo obtenha os conteúdos em texto simples de voz, dados e outras comunicações quando apropriadamente autorizado por lei.''
+\begin{quote}
+    É o entendimento do Congresso que os provedores de serviços de comunicações eletrônicas e os fabricantes de equipamentos de serviços de comunicações eletrônicas devem garantir que os sistemas de comunicações permitam que o governo obtenha os conteúdos em texto simples de voz, dados e outras comunicações quando apropriadamente autorizado por lei.
+\end{quote}
 
 Essa linguagem recebeu uma reação furiosa de grupos de liberdades civis e acabou não sobrevivendo, mas Zimmermann decidiu tomar as rédeas da situação.
 
